@@ -1,10 +1,5 @@
 // https://leetcode.com/problems/the-skyline-problem
 
-bool equalityCheck(vector<int> a, vector<int> b) 
-{ 
-    return a[1] == b[1];
-} 
-
 class Solution {
 public:
 
