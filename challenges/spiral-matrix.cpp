@@ -1,5 +1,3 @@
-// https://leetcode.com/problems/spiral-matrix
-
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
@@ -9,25 +7,32 @@ public:
 
         while(startx<=endx && starty<=endy) {
           
-
-          for(int i=starty;i<=endy;i++) {
-            spiral.push_back(matrix[startx][i]);
+          for(j=starty;j<=endy;j++) {
+            cout<<" "<<matrix[i][j];
+            spiral.push_back(matrix[i][j]);
           } 
-          startx++;
-          for(int i=startx;i<=endx;i++) {
-            spiral.push_back(matrix[i][endy]);
+          j--;
+          for(i=startx+1;i<=endx;i++) {
+            cout<<" "<<matrix[i][j];
+            spiral.push_back(matrix[i][j]);
           }
+          i--;
+          if(startx<endx)
+          for(j=endy-1;j>=starty;j--) {
+            cout<<" "<<matrix[i][j];
+            spiral.push_back(matrix[i][j]);
+          } 
+          j++;
+          if(starty<endy)
+          for(i=endx-1;i>=startx+1;i--) {
+            cout<<" "<<matrix[i][j];
+            spiral.push_back(matrix[i][j]);
+          }
+          i++;
           endy--;
-          if(startx<=endx)
-          for(int i=endy;i>=starty;i--) {
-            spiral.push_back(matrix[endx][i]);
-          } 
-          endx--;
-          if(starty<=endy)
-          for(int i=endx;i>=startx;i--) {
-            spiral.push_back(matrix[i][starty]);
-          }
+          startx++;
           starty++;
+          endx--;
         }
 
       return spiral;
