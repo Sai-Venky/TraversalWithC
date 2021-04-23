@@ -2,30 +2,31 @@
 
 class Solution {
 public:
-    unordered_map<int, vector<TreeNode*>> memo;
-    
-    vector<TreeNode*> allPossibleFBT(int N) 
-    {
-        if(memo.find(N) != memo.end()) return memo[N];
-        if(N == 1) return memo[N] = {new TreeNode(0)};
-        if(N%2 == 0) return {};
+    unordered_map<int, vector<TreeNode*>> umap;  
+  
+    vector<TreeNode*> allPossibleFBT(int N) {
+      vector<TreeNode*> output;
+      if(N%2==0) return output;
+      if(umap.find(N)!=umap.end()) return umap[N];
+      if(N==1) {
+        TreeNode* node = new TreeNode(0);
+        output.push_back(node); 
+        umap[N] = output;
+        return output;
+      }
+      
+      for(int i=2;i<N;i+=2) {
         
-        vector<TreeNode*> tree;
-        
-        for(int x = 0 ; x < N ; ++x)
-        {
-            int y = N - x - 1;
-            for(auto l: allPossibleFBT(x))
-            {
-                for(auto r: allPossibleFBT(y))
-                {
-                    TreeNode *root = new TreeNode(0);
-                    root->left = l;
-                    root->right = r;
-                    tree.push_back(root);
-                }
-            }
+        for(auto l: allPossibleFBT(i-1)) {
+          for(auto r: allPossibleFBT(N-i)) {
+            TreeNode* node = new TreeNode(0);
+            node->left = l;
+            node->right = r;
+            output.push_back(node);
+          }
         }
-        return memo[N] = tree;
+      }
+      umap[N] = output;
+      return output;
     }
 };
