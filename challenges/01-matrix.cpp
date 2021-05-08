@@ -17,18 +17,16 @@ public:
           }
         }
       }
-      int length=0;
       while(!q.empty()) {
         int l = q.size();
-        length++;
         for(int i=0; i<l; i++) {
           pair <int, int> pairval = q.front();
           for(auto val: dir) {
             int x = pairval.first + val[0]; 
             int y = pairval.second + val[1];
             if(x>=0 && y>=0 && x<m && y<n && matrix[x][y] == -1) {
-              matrix[x][y] = length;
               q.push({x,y});
+              matrix[x][y] = matrix[pairval.first][pairval.second]+1;
             }
           }
           q.pop();
