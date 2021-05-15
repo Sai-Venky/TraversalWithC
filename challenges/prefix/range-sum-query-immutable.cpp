@@ -2,15 +2,15 @@
 
 class NumArray {
 public:
-    vector<int> array;
-    NumArray(vector<int>& nums) {
-      array = nums;
+    vector<int> accu;
+    NumArray(vector<int> &nums) {
+        accu.push_back(0);
+        for (int num : nums)
+            accu.push_back(accu.back() + num);
     }
-    
-    int sumRange(int left, int right) {
-      int sum=0;
-      for(int i=left;i<=right;i++) sum+=array[i];
-      return sum;
+
+    int sumRange(int i, int j) {
+        return accu[j + 1] - accu[i];
     }
 };
 
