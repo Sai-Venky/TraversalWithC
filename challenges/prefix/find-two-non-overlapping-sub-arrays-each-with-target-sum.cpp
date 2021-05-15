@@ -1,5 +1,12 @@
 // https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum
 
+
+/*
+    1. The l1, l2 combo where if l1 changes , then l2 changes ensures that we CONSIDER the outputs in sequential format 
+    that is l2 is considered after l1.
+    2. sum+target is another good addition to check
+*/
+
 class Solution {
 public:
     int minSumOfLengths(vector<int>& arr, int target) {
