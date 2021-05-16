@@ -1,5 +1,15 @@
 // https://leetcode.com/problems/ways-to-make-a-fair-array
 
+/*
+
+    1. Taking the sym for odd and even in reverse order.
+    2. Considering sum from start and the array 
+        Your input
+        [2,1,6,4]
+        stdout
+        E 8 6 6 0 0 
+        O 5 5 4 4 0 
+*/
 class Solution {
 public:
     int waysToMakeFair(vector<int>& A) {
