@@ -4,23 +4,19 @@ class Solution {
 public:
     int maxDistance(vector<int>& nums1, vector<int>& nums2) {
       int i=0, j=0;
-      int n=nums1.size(), m=nums2.size();
       int dis=0;
       while(true) {
         
-        if(i==n||j==m) break;
+        if(i==nums1.size()||j==nums2.size()) break;
                 
-        if(j<i ) {
-          j++; 
-          continue;
-        }
         if(nums2[j]<nums1[i] ) {
           i++; 
-          continue;
+          j++;
+        } else {
+          dis = max(dis, j-i);
+          j++;
         }
-        // cout<<i<<" "<<j<<"\n";
-        dis = max(dis, j-i);
-        j++;
+        
       }
       return dis;
     }
