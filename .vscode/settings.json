@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.jenkinsfile": "groovy",
         "__locale": "cpp",
         "__string": "cpp",
         "string_view": "cpp",
@@ -13,6 +14,8 @@
         "__tuple": "cpp",
         "array": "cpp",
         "iosfwd": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "chrono": "cpp",
+        "cmath": "cpp"
     }
 }
