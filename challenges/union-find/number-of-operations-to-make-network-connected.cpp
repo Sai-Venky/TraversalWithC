@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/number-of-operations-to-make-network-connected/
 
+
+/*
+    Important to note that To connect all nodes need at least n-1 edges
+*/
 class Solution {
 public:
   vector<int>parent;
