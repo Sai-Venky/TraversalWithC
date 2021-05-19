@@ -1,5 +1,8 @@
 // https://leetcode.com/problems/rotting-oranges/
 
+/*
+  Keep note of the -1 in the initialization. This is the logical difference here to increment and calculate distance .
+*/
 class Solution {
 public:
     int orangesRotting(vector<vector<int>>& grid) {
