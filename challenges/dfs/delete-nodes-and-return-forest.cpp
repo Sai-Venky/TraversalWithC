@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/delete-nodes-and-return-forest/
 
+/*
+    Starting from the bottom , nodes are deleted. 
+    Why bottom? cause you dont need to worry about the top, but in reverse the deletion of top affects the bottom.
+*/
+
 class Solution {
     unordered_set<int> del;
     vector<TreeNode *> res;
