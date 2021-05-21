@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree
 
+
+/*
+ https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/discuss/648898/figure-illustrationC%2B%2B-DFS%2B-Odd-frequency-count-and-4-line-solution 
+*/
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
