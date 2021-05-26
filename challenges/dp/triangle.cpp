@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/triangle
 
+/*
+    A single array itself is used to store all the minimum path values, as after one iteration its useless.
+*/
+
 class Solution {
 public:
     int minimumTotal(vector<vector<int> > &triangle) {
@@ -9,7 +13,6 @@ public:
     {
         for (int i = 0; i <= layer; i++) // Check its every 'node'
         {
-            // Find the lesser of its two children, and sum the current value in the triangle with it.
             minlen[i] = min(minlen[i], minlen[i+1]) + triangle[layer][i]; 
         }
     }
