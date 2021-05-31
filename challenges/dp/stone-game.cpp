@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/stone-game/
 
+/*
+    Added 2d to 1d array solution.
+    Similar to predict-the-winner
+*/
 class Solution {
 public:
     bool stoneGame(vector<int>& nums)  {
