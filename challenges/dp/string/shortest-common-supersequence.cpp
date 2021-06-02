@@ -16,15 +16,14 @@ public:
       }
       int i=m, j=n;
       string res="";
-      while(i>0 || j>0) {
-        if(i>0 && dp[i][j] == dp[i-1][j]) {
-          res=str1[--i]+res;
-        } else if (j>0 && dp[i][j] == dp[i][j-1]){
-          res=str2[--j]+res;
-        } else {
-          res=str1[--i]+res;j--;
-        } 
+      while(i>0 && j>0) {
+        if(str1[i-1]==str2[j-1]) {res.push_back(str1[--i]); j--;}
+        else if(dp[i-1][j]>dp[i][j-1]) res.push_back(str1[--i]);
+        else res.push_back(str2[--j]);
       }
+      while(i>0) res.push_back(str1[--i]);
+      while(j>0) res.push_back(str2[--j]);
+      reverse(res.begin(),res.end()); 
       return res;
     }
 };
