@@ -16,6 +16,7 @@ public:
             if (p[j - 1] != '*') 
               f[i][j] = f[i - 1][j - 1] && (s[i - 1] == p[j - 1] || '.' == p[j - 1]);
             else
+                // Matches empty sequence or checks one or more match
               f[i][j] = f[i][j - 2] || (s[i - 1] == p[j - 2] || '.' == p[j - 2]) && f[i - 1][j];
         
         return f[m][n];

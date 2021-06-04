@@ -21,6 +21,7 @@ public:
           if(s[i-1] == p[j-1] || '?' == p[j-1]) {
             dp[i][j] = dp[i-1][j-1];
           } else if (p[j-1] == '*') {
+            // Matches empty sequence or checks one or more match
             dp[i][j] = dp[i-1][j] || dp[i][j-1];
           }
         }
