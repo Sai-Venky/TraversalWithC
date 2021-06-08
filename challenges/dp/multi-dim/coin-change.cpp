@@ -10,11 +10,9 @@ public:
       
       for(int i=1;i<=n;i++) {
         dp[i][0] = 0;
-        // cout<<"\n";
         for(int j=1;j<=amount;j++) {
           
           dp[i][j] = min(dp[i-1][j], (j>=coins[i-1] && dp[i][j-coins[i-1]] !=INT_MAX?1+dp[i][j-coins[i-1]]:INT_MAX));
-          // cout<<dp[i][j]<<" ";
         }
       }
       return dp[n][amount]==INT_MAX?-1:dp[n][amount];
