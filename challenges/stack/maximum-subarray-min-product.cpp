@@ -2,26 +2,20 @@
 
 class Solution {
 public:
-    int maxSumMinProduct(vector<int>& nums) {
-      vector<long> prefix = {0}; 
-      for (auto x : nums) 
-          prefix.push_back(prefix.back() + x); 
-
-      long ans = 0; 
-      stack<pair<int, int>> stk; 
-      nums.push_back(0); 
-
-      for (int i = 0; i < nums.size(); ++i) {
-          int ii = i; 
-          while (stk.size() && stk.top().second >= nums[i]) {
-              ii = stk.top().first; 
-              int val = stk.top().second; 
-              ans = max(ans, val * (prefix[i] - prefix[ii])); 
-              stk.pop(); 
+    int maxSumMinProduct(vector<int>& n) {
+      long res = 0;
+      vector<long> dp(n.size() + 1), st;
+      for (int i = 0; i < n.size(); ++i)
+         dp[i + 1] = dp[i] + n[i];
+      for (int i = 0; i <= n.size(); ++i) {
+          while (!st.empty() && (i == n.size() || n[st.back()] > n[i])) {
+              int j = st.back();
+              st.pop_back();
+              res = max(res, n[j] * (dp[i] - dp[st.empty() ? 0 : st.back() + 1]));
           }
-          stk.push(make_pair(ii, nums[i])); 
+          st.push_back(i);
       }
-      return ans % 1'000'000'007; 
+      return res % 1000000007;
     }
   
 };
