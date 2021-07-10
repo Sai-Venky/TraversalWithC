@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/number-of-wonderful-substrings
 
+// https://leetcode.com/problems/number-of-wonderful-substrings/discuss/1301408/Bitmask-with-pictures-or-Python-or-O(N)
+
 class Solution {
 public:
     long long wonderfulSubstrings(string word) {
