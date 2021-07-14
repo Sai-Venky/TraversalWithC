@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings
 
+// https://federico-feresini.medium.com/split-a-string-into-the-max-number-of-unique-substrings-algorithms-visualizations-6116561b7fc6
+// Bit based approach
 class Solution {
 public:
     unordered_set<string> s;
