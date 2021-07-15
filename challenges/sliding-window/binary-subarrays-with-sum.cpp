@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/binary-subarrays-with-sum/
 
 /*
+   c represents how many start-from-index-zero (prefix) sub array that sums to i.
    int numSubarraysWithSum(vector<int>& A, int S) {
         unordered_map<int, int> c({{0, 1}});
         int psum = 0, res = 0;
