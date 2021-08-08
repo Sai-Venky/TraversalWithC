@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/count-good-meals/
 
+// Note the traversal being done one at a time to ensure duplicates are not counted.
 class Solution {
 public:
     int countPairs(vector<int>& a) {
