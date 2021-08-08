@@ -17,7 +17,7 @@
             }
         };
         Code - SF
-        Logic - Making use of Mod here.
+        Logic - Note the use of Mod here.
 */
 
 class Solution {
