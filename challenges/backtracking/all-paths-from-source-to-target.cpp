@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/all-paths-from-source-to-target
 
+/*  
+  Logic - Backtracking
+  Code  - SF
+*/
+
 class Solution {
     vector<vector<int>> outputs;
 public:

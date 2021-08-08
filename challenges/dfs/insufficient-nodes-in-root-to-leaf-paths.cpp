@@ -16,7 +16,8 @@ public:
     
     TreeNode* sufficientSubset(TreeNode* root, int limit, int sum=0) {
       if(!root) return root;
-      sum+=root->val;      if(!root->left && !root->right) {
+      sum+=root->val;      
+      if(!root->left && !root->right) {
         if(sum<limit) return NULL;
         else return root;
       }

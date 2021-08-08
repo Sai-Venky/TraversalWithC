@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/richest-customer-wealth
 
+// SF
+
 class Solution {
 public:
     int maximumWealth(vector<vector<int>>& accounts) {

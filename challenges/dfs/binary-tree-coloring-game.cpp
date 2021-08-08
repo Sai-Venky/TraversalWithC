@@ -1,16 +1,13 @@
 // https://leetcode.com/problems/binary-tree-coloring-game
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
+/*
+  Logic -
+    Count the number of nodes in all directions.
+    Note the subtraction part.
+  Code -
+    SF
+*/
+
 class Solution {
 public:
     bool canWin=false;

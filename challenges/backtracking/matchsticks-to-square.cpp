@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/matchsticks-to-square/
 
+/*  
+  Logic - Backtracking
+  Code  - SF
+*/
+
 class Solution {
 public:
     bool dfs(vector<int>& nums, vector<int>& sums, int index, int *target) {

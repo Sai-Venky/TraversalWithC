@@ -2,7 +2,11 @@
 
 /*
 
-    int maximalRectangle(vector<vector<char> > &matrix) {
+/*  
+  Logic - SF
+  Code  - Note the use of stack and addition of 0 in end to triiger computation in largestRectangleArea function
+
+  int maximalRectangle(vector<vector<char> > &matrix) {
     if(matrix.empty()){
         return 0;
     }
@@ -20,9 +24,9 @@
         maxRec = max(maxRec, largestRectangleArea(height));
     }
     return maxRec;
-    }
+  }
 
-    int largestRectangleArea(vector<int> &height) {
+  int largestRectangleArea(vector<int> &height) {
         stack<int> s;
         height.push_back(0);
         int maxSize = 0;
@@ -38,8 +42,14 @@
             }
         }
         return maxSize;
-    }
+  }
 */
+
+/*  
+  Logic - SF
+  Code  - Store both rows and cols in meta data
+*/
+
 
 class Solution {
 public:

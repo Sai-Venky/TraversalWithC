@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/cinema-seat-allocation/
 
+// Making use of map to store the reserved seats , then checking if they are valid. 
 class Solution {
 public:
     bool isVacant(int start,int end,vector<int>&row){

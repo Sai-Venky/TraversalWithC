@@ -1,5 +1,11 @@
 // https://leetcode.com/problems/subarrays-with-k-different-integers
 
+/*  
+  Logic - This uses the atmost logic to find the number of different subarrays.
+  Code  - Sliding Window
+*/
+
+
 class Solution {
 public:
     int atMost(vector<int>& A, int k) {

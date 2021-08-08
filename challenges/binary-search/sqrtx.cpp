@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/sqrtx/
 
+/*
+  Code - BS
+  Logic - SF
+*/
 class Solution {
 public:
     int mySqrt(int x) {

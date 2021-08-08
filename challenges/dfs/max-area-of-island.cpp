@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/max-area-of-island/
 
+/*  
+  Logic - DFS
+  Code  - SF
+*/
+
 class Solution {
 public:
     int dfs(vector<vector<int>>& grid, int i, int j) {

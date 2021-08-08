@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/search-insert-position
 
+/*
+  Code - BS
+  Logic - SF
+*/
 class Solution {
 public:
     int searchInsert(vector<int>& nums, int target) {

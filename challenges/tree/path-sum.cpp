@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/path-sum
 
+/*
+  Logic - SF
+  Code - Recursion
+ */
+ 
 class Solution {
 public:
     bool hasPathSum(TreeNode* root, int sum) {

@@ -16,6 +16,8 @@
                 return res;
             }
         };
+        Code - SF
+        Logic - Making use of Mod here.
 */
 
 class Solution {

@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses
 
+/*
+  Logic - SF.
+  Code - Stack
+ */
+
 class Solution {
 public:
     string reverseParentheses(string str) {

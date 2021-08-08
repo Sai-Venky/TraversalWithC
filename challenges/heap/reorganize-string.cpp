@@ -29,6 +29,11 @@
         return S;
     }
 */
+/*
+  Code  - SF. Note use of map to count frequency
+  Logic - Heap
+*/
+
 class Solution {
 public:
     string reorganizeString(string s) {

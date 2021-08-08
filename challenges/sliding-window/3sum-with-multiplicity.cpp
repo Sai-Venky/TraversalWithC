@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/3sum-with-multiplicity
 
+/*  
+  Logic - SF
+  Code  - Using two pointers for each triplets. Ensuring duplicates are counted properly for multiplicity.
+*/
+
 class Solution {
 public:
     int threeSumMulti(vector<int>& nums, int target)  {

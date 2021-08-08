@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/continuous-subarray-sum/
 
+// Store reminders and find the sums
+
 class Solution {
 public:
     bool checkSubarraySum(vector<int>& nums, int k) {

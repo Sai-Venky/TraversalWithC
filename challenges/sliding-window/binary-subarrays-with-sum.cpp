@@ -14,6 +14,11 @@
     }
 */
 
+/*  
+  Logic - Calculating the atmost logic here since this is case where solving for one subarray dose not generalize it for all subarrays
+  Code  - Using Sliding Window
+*/
+
 class Solution {
 public:
     int numSubarraysWithSum(vector<int>& A, int S) {

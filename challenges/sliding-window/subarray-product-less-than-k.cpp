@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/subarray-product-less-than-k/
 
+/*  
+  Logic - SF
+  Code  - Sliding Window
+*/
+
 class Solution {
 public:
     int numSubarrayProductLessThanK(vector<int>& nums, int k) {

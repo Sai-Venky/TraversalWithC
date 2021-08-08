@@ -8,6 +8,29 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
+ /*
+  Logic - SF. Note the use of reverting to start in case of end
+  Code - Stack
+ */
+ 
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+    ListNode *cur1 = headA, *cur2 = headB;
+    while(cur1 != cur2){
+        cur1 = cur1?cur1->next:headB;
+        cur2 = cur2?cur2->next:headA;
+    }
+    return cur1;
+}
+};
+
+ /*
+  Logic - SF. Note the use of pointers and diff traversal to correctly go the node
+  Code - Stack
+ */
+
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {

@@ -1,5 +1,8 @@
 // https://leetcode.com/problems/koko-eating-bananas/
-
+/*
+  Logic - SF
+  Code - BS
+ */
 class Solution {
 public:
     int checkHours(vector<int>& piles, int m) {
@@ -23,13 +26,13 @@ public:
       }
       
       
-      while(l<=h) {
+      while(l<h) {
         int m = l + ((h-l)/2);
         int hours = checkHours(piles, m);
         if(hours > hr) {
           l = m+1;
         } else {
-          h = m-1;
+          h = m;
         }
 
       }
@@ -38,4 +41,3 @@ public:
       
     }
 };
-

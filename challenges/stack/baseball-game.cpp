@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/baseball-game/
 
+/*
+  Logic - Stack
+  Code - SF
+*/
+
 class Solution {
 public:
     int calPoints(vector<string>& ops) {

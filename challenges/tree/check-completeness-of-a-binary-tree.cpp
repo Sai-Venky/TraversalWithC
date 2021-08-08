@@ -11,6 +11,12 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+   /*
+  Logic - SF
+  Code - Recursion
+ */
+ 
 class Solution {
 public:
     bool isCompleteTree(TreeNode* root) {

@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/top-k-frequent-words/
 
+/*
+  Code  - SF. Note use of pair op to track freq
+  Logic - Heap
+*/
+
 class Solution {
 public:
     struct Frequency {

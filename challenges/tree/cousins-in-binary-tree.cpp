@@ -11,40 +11,48 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class Solution {
-  bool foundx, foundy;
-  int parentx, parenty, depthx, depthy;
 
-  
-public:
-    void checkIfCousins(TreeNode* root, int x, int y, int depth, TreeNode* parent) {
-      if((foundx && foundy) || root==NULL) return;
-      
-      if(root->val==x){
-        foundx = true;
-        parentx = parent->val;
-        depthx = depth;
+ /*
+  bool isCousins(TreeNode* root, int x, int y, bool siblings = false, bool cousin = false) {
+    queue<TreeNode*> q, q1;
+    q.push(root);
+    while (!q.empty() && !cousin) {
+      while (!q.empty()) {
+        auto n = q.front();
+        q.pop();
+        if (n == nullptr) siblings = false;
+        else {
+          if (n->val == x || n->val == y) {
+            if (!cousin) cousin = siblings = true;
+            else return !siblings;
+          }
+          q1.push(n->left), q1.push(n->right), q1.push(nullptr);
+        }
       }
-      if(root->val==y){
-        foundy = true;
-        parenty = parent->val;
-        depthy = depth;
-      }
-      checkIfCousins(root->left, x, y, depth+1, root);
-      checkIfCousins(root->right, x, y, depth+1, root);
+      swap(q, q1);
     }
-  
+    return false;
+  }
+ */
+class Solution {
+public:
+    TreeNode* xParent = NULL, *yParent = NULL;
+    int xDepth = -1, yDepth = -2;
     bool isCousins(TreeNode* root, int x, int y) {
-      if(root==NULL) return false;  
-      parentx = root->val;
-      parenty = root->val;
-      foundx = false;
-      foundy = false;
-      TreeNode* temp = new TreeNode(0);
-      checkIfCousins(root, x, y, 0, temp);
-      if((foundx && foundy) && (parentx!=parenty) && (depthx == depthy)) {
-        return true;
-      }
-      return false;
+        dfs(root, NULL, x, y, 0);
+        return xDepth == yDepth && xParent != yParent;
+    }
+    void dfs(TreeNode* root, TreeNode* parent, int x, int y, int depth) {
+        if (root == NULL) return;
+        if (x == root->val) {
+            xParent = parent;
+            xDepth = depth;
+        } else if (y == root->val) {
+            yParent = parent;
+            yDepth = depth;
+        } else {
+            dfs(root->left, root, x, y, depth + 1);
+            dfs(root->right, root, x, y, depth + 1);
+        }
     }
 };

@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/sum-of-subarray-minimums
 
+https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
+
 class Solution {
 public:
      int sumSubarrayMins(vector<int> A) {

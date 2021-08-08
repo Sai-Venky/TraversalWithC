@@ -10,6 +10,10 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+ /*
+  Logic - SF. 2 Pointers Approach. Cover edge cases
+  Code - Stack
+*/
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {

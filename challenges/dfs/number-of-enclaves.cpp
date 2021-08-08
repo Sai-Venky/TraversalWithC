@@ -1,5 +1,12 @@
 // https://leetcode.com/problems/number-of-enclaves/
 
+/*  
+  Logic - DFS
+  Code  - Note the use of boundary here to mark those alone
+  Runtime: O(n * m), where n and m are the dimensions of the grid.
+  Memory: O(n * m). DFS can enumerate all elements in the worst case, and we need to store each element on the stack for the recursion.
+*/
+
 class Solution {
 public:
     void dfs(vector<vector<int>>& grid, int i, int j) {

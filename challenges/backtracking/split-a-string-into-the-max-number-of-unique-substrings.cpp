@@ -2,6 +2,12 @@
 
 // https://federico-feresini.medium.com/split-a-string-into-the-max-number-of-unique-substrings-algorithms-visualizations-6116561b7fc6
 // Bit based approach
+
+/*  
+  Logic - Backtracking
+  Code  - SF
+*/
+
 class Solution {
 public:
     unordered_set<string> s;

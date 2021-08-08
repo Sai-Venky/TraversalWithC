@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/4sum-ii
 
+/* 
+  Logic- Identify that the map can have duplicate sums, hence add them correspongingly in count and note its number of such sums.
+  Code - Using map to store the sums.
+*/
+
 class Solution {
 public:
     int fourSumCount(vector<int>& A, vector<int>& B, vector<int>& C, vector<int>& D) {

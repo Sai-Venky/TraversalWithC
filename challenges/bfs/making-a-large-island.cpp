@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/making-a-large-island
 
+/*  
+  Logic - BFS + DFS
+  Code  - marking with color and then finding nearby.
+*/
+
 class Solution {
 public:
       

@@ -1,37 +1,22 @@
 // https://leetcode.com/problems/rotating-the-box
 
+/*  
+  Logic - SF. Note its replicating gravity.
+  Code  - Two Pointers
+*/
+
 class Solution {
 public:
     vector<vector<char>> rotateTheBox(vector<vector<char>>& box) {
-      int m=box.size();
-      int n=box[0].size();
-      vector<vector<char>> rot(n, vector<char>(m, '.'));
-      for(int i=m-1;i>=0;i--) {
-        
-        int l=0, h=0, ct=0;
-        while(true) {
-          if(l>=n) break;
-          if(h==n || box[i][h] == '*') {
-            if(l==h && h!=n) {
-              rot[l++][m-i-1]='*';
-              h++;
-              ct=0;
-            } else if(l>=h-ct) {
-              rot[l++][m-i-1]='#';
-            } else {
-              rot[l++][m-i-1]='.';            
+    int m = box.size(), n = box[0].size();
+    vector<vector<char>> res(n, vector<char>(m, '.'));
+    for (int i = 0; i < m; ++i)
+        for (int j = n - 1, k = n - 1; j >= 0; --j)
+            if (box[i][j] != '.') {
+                k = box[i][j] == '*' ? j : k;
+                res[k--][m - i - 1] = box[i][j];
             }
-            
-            continue;
-          } else if(box[i][h] == '#') {
-            ct++;
-          }
-          h++;
-        }
-        
-        
-      }
-      return rot;
-      
-    }
+
+    return res;
+  }
 };

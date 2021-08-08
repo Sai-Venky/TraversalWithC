@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/fruit-into-baskets
 
+/*  
+  Logic - SF
+  Code  - Sliding Window
+*/
+
 class Solution {
 public:
     int totalFruit(vector<int>& tree) {

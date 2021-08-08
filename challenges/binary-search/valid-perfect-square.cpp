@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/valid-perfect-square
 
+/*
+  Code - BS
+  Logic - SF
+*/
 class Solution {
 public:
     bool isPerfectSquare(int num){

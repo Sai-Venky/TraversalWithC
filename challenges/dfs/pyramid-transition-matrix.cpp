@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/pyramid-transition-matrix
 
+/*  
+  IMP
+  Logic - DFS
+  Code  - next string is reused
+*/
 class Solution {
 public:
   bool pyramidTransition(string bottom, vector<string>& allowed) {

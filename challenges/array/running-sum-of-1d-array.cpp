@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/running-sum-of-1d-array
 
+// SF
+
 class Solution {
 public:
     vector<int> runningSum(vector<int>& nums) {

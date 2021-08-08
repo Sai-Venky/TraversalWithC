@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/spiral-matrix/
 
+// Note the traversals
+
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {

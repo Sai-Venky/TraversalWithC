@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/evaluate-reverse-polish-notation
 
+/*
+  Logic - SF
+  Code- Stack
+*/
+
 class Solution {
 public:
     int evalRPN(vector<string>& tokens) {

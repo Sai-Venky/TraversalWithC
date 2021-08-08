@@ -1,5 +1,14 @@
 // https://leetcode.com/problems/next-greater-element-iii/
 
+
+/*
+Think of these questions
+Note that the returned integer should fit in 32-bit integer, if there is a valid answer but it does not fit in 32-bit integer, return -1.
+
+    Logic - SF. Note the use of swap and REVERSE. Also they are coming from back since immediate dreater element
+    Code - Stack
+*/
+
 class Solution {
 public:
     int nextGreaterElement(int n) {

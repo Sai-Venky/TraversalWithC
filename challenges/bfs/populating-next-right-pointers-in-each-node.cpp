@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 
+/*  
+  Logic - BFS
+  Code  - Traversing from right to left in the assignment.
+*/
+
 class Solution {
 public:
     Node* connect(Node* root) {

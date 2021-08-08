@@ -20,6 +20,11 @@ public:
 };
 */
 
+/*  
+  Logic - BFS
+  Code  - SF.
+*/
+
 class Solution {
 public:
     vector<vector<int>> levelOrder(Node* root) {

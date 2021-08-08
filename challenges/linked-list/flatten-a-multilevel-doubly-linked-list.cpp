@@ -11,6 +11,11 @@ public:
 };
 */
 
+ /*
+  Logic - SF
+  Code - Stack
+ */
+
 class Solution {
 public:
     Node* par;

@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/split-linked-list-in-parts/
 
+/*
+  Logic - SF. 
+  Code - Stack. note the organization of the code
+*/
 class Solution {
 public:
     vector<ListNode*> splitListToParts(ListNode* root, int k) {

@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/path-with-maximum-probability
 
+/*  
+  Logic - BFS
+  Code  - Note the use of visited here and they are considering at that point only those node values which are greater than it.
+*/
+
 class Solution {
 public:
     double maxProbability(int n, vector<vector<int>>& edges, vector<double>& succProb, int start, int end) {

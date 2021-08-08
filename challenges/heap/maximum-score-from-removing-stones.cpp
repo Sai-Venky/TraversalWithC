@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/maximum-score-from-removing-stones/
 
+/*
+  Code  - SF
+  Logic - Heap
+*/
+
 class Solution {
 public:
     int maximumScore(int a, int b, int c) {

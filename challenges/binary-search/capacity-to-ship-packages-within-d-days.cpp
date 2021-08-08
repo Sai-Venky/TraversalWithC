@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/capacity-to-ship-packages-within-d-days
 
+/*
+  Code - BS
+  Logic - We dig out the monotonicity of this problem: if we can successfully ship all packages within D days with capacity m, then we can definitely ship them all with any capacity larger than m
+*/
+
 class Solution {
 public:
     bool isPossible(vector<int>& weights, int cap, int D) {

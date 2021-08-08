@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/next-greater-element-i
 
+/*  
+    Logic - SF. Note the use of s.top() for later computation
+    Code - Stack
+*/
+
 class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {

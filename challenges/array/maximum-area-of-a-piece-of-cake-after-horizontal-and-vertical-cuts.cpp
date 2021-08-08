@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/
 
+// Good question to check logic
 class Solution {
 public:
     int maxArea(int h, int w, vector<int>& hc, vector<int>& vc) {

@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/spiral-matrix-ii
 
+// Note the traversals
+
 class Solution {
 public:
     vector<vector<int>> generateMatrix(int n) {

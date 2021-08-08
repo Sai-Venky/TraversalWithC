@@ -1,5 +1,8 @@
 // https://leetcode.com/problems/combination-sum
-
+/*  
+  Logic - Backtracking
+  Code  - SF
+*/
 class Solution {
 public:
     vector<vector<int>> outputs;

@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/smallest-subsequence-of-distinct-characters
 
+/*
+  Logic - SF. same as remove duplicate characters
+  Code - Stack
+ */
+
 class Solution {
 public:
     string smallestSubsequence(string str) {

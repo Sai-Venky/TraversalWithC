@@ -3,6 +3,11 @@
 // The API isBadVersion is defined for you.
 // bool isBadVersion(int version);
 
+/*
+  Code - BS
+  Logic - SF
+*/
+
 class Solution {
 public:
     

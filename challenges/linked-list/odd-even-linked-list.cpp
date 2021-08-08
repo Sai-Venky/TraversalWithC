@@ -10,6 +10,10 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+ /*
+  Logic - SF. Note use of single O(1) space 
+  Code - Stack
+*/
 class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {

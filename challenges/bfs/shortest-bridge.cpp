@@ -1,8 +1,11 @@
 // https://leetcode.com/problems/shortest-bridge/
 
 /*
-    COmbination of DFS + BFS
-    First find first 1 island and mark all as visited. Then increment and find next island.
+
+    Logic - BFS
+      COmbination of DFS + BFS
+      First find first 1 island and mark all as visited. Then increment and find next island.
+    Code  - Traversing from right to left in the assignment.
 */
 
 class Solution {

@@ -1,8 +1,10 @@
 // https://leetcode.com/problems/delete-nodes-and-return-forest/
 
 /*
+    Logic - DFS
     Starting from the bottom , nodes are deleted. 
     Why bottom? cause you dont need to worry about the top, but in reverse the deletion of top affects the bottom.
+    Code - SF
 */
 
 class Solution {

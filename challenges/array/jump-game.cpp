@@ -2,21 +2,15 @@
 
 class Solution {
 public:
-    bool canJump(vector<int>& nums) {        
-        if(nums.size() == 1) return true;
-        int countTillNow = nums[0];
-
-        for(int i=1; i<nums.size(); i++) {
-            countTillNow--;
-            if(countTillNow <0) {
-                break;
-            }
-            if(nums[i] > countTillNow) {
-                countTillNow = nums[i];
-            }
-
-        }
+    bool canJump(vector<int>& nums) {
+      int m=nums[0];
+      int i=0;
+      while(i<=m) {
+        if(i>=nums.size()-1) return true;
+        m=max(m, i+nums[i]);
+        i++;
         
-        return countTillNow<0?false:true;
+      }
+      return false;
     }
 };

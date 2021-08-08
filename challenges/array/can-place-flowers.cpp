@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/can-place-flowers
 
+// SF
 class Solution {
 public:
     bool canPlaceFlowers(vector<int>& flowerbed, int n) {

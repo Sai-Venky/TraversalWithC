@@ -37,6 +37,11 @@ public:
 
 */
 
+/*
+  Code  - SF. Note us of first 4 indices alone
+  Logic - Heap
+*/
+
 class Solution {
 public:
     int kthSmallest(vector<vector<int>>& matrix, int k) {

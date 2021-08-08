@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/intersection-of-two-arrays/ 
 
+// SF . Note the use of map to increase and then decrease the count. Finally the greater elements are returned
+
 class Solution {
 public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {

@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/peak-index-in-a-mountain-array
 
+/*
+  Code - BS
+  Logic - SF
+*/
 class Solution {
 public:
     int peakIndexInMountainArray(vector<int>& arr) {

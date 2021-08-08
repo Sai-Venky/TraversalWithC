@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/last-stone-weight/
 
+/*
+  Code  - SF
+  Logic - Heap
+*/
+
 class Solution {
 public:
     int lastStoneWeight(vector<int>& stones) {

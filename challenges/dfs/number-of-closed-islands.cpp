@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/number-of-closed-islands/
 
+/*  
+  Logic - DFS
+  Code  - Note the boolean part to mark all 0's to 1 to ensure they dont execute again
+*/
+
 class Solution {
 public:
     int closedIsland(vector<vector<int>>& grid) {

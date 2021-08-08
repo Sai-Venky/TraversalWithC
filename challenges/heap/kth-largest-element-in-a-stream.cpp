@@ -1,5 +1,8 @@
 // https://leetcode.com/problems/kth-largest-element-in-a-stream
-
+/*
+  Code  - SF
+  Logic - Heap
+*/
 class KthLargest {
   int k_;
   priority_queue<int, vector<int>, greater<int>> q;

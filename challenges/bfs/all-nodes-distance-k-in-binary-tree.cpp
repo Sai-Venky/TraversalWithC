@@ -1,8 +1,11 @@
 // https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree
 
 /*
+  Logic - BFS
     DFS+BFS
     DFS for finding the neighbours
+  Code  - unordered_map used as visited
+  space and time o(n) and O(n) 
 */
 
 /**

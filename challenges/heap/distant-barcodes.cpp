@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/distant-barcodes
 
+/*
+  Code  - SF. Note use of map to count frequency
+  Logic - Heap
+*/
+
 class Solution {
 public:
     vector<int> rearrangeBarcodes(vector<int>& barcodes) {

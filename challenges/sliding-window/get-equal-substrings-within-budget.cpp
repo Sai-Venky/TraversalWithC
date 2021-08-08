@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/get-equal-substrings-within-budget/
 
+/*  
+  Logic - Sliding Window Algorithm SF
+  Code  - Using a single variable.
+*/
+
 class Solution {
 public:
     int equalSubstring(string s, string t, int maxCost) {

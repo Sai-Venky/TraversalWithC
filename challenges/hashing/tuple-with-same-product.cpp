@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/tuple-with-same-product
 
+// SF
+
 class Solution {
 public:
     int tupleSameProduct(vector<int>& nums) {

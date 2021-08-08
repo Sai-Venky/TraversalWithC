@@ -1,29 +1,16 @@
 // https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string
 
-class Solution {
-public:
-    string removeDuplicates(string str) {
-      
-      stack<pair<char, int>> s;
-      
-      for(int i=0;i<str.length();i++) {
-        
-        if(!s.empty() && s.top().first == str[i]) {
-          s.top().second++;
-        } else {
-          s.push({str[i], 1});
-        }
-        
-        if(s.top().second == 2) s.pop();
-        
-      }
-      string out="";
-      while(!s.empty()) {
-        for(int i=0;i<s.top().second;i++) {
-          out+=s.top().first;          
-        }
-        s.pop();
-      }
-      return string(out.rbegin(), out.rend());
-    }
-};
+/*
+  Logic - SF. Note trick how push and pop is toggled to ensure duplicates are not inserted also.
+  Code - Stack
+ */
+
+string removeDuplicates(string S) {
+    string res = "";
+    for (char& c : S)
+        if (res.size() && c == res.back())
+            res.pop_back();
+        else
+            res.push_back(c);
+    return res;
+}

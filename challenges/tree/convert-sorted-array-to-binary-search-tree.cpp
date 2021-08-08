@@ -11,6 +11,11 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+   /*
+  Logic - SF. Note the recursing part here with middle
+  Code - Recursion
+ */
 class Solution {
 public:
     TreeNode* sortedArrayToBST(vector<int>& nums) {      

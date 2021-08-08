@@ -1,5 +1,8 @@
 // https://leetcode.com/problems/kth-largest-element-in-an-array
-
+/*
+  Code  - SF
+  Logic - Heap
+*/
 class Solution {
 public:
     int findKthLargest(vector<int>& nums, int k) {

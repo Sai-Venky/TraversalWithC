@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/as-far-from-land-as-possible/
 
+/*  
+  Logic - BFS
+  Code  - using dirs and marking other value as increment to ensure its not used again (Visited).
+*/
+
 class Solution {
 public:
     int maxDistance(vector<vector<int>>& grid) {

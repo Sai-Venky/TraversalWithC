@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/avoid-flood-in-the-city
 
+/*
+    Note the use of lower bound in set to calculate the dry day just after the first appearance of wet day
+*/
+
 class Solution {
 public:
     vector<int> avoidFlood(vector<int>& rains) {

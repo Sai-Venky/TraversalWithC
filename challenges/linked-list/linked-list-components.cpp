@@ -10,6 +10,12 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+/*
+  Logic - SF. Note the use of  !subset.count(head->next->val)
+  Code - Stack
+ */
+
 class Solution {
 public:
     int numComponents(ListNode* head, vector<int>& G) {

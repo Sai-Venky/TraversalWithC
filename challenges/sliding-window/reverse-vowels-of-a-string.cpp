@@ -1,5 +1,11 @@
 // https://leetcode.com/problems/reverse-vowels-of-a-string/
 
+/*  
+  Logic - SF
+  Code  - Two Pointers
+*/
+
+
 class Solution {
 public:
     string reverseVowels(string s) {

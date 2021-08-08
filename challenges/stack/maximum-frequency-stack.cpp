@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/maximum-frequency-stack/
 
+/*  
+  Logic - Note the use of map to store frequency and keeping track of max frequency
+  Code  - Stack
+*/
+
 class FreqStack {
 public:
     unordered_map<int,int> freq;

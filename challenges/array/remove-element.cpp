@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/remove-element/
 
+// SF
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {

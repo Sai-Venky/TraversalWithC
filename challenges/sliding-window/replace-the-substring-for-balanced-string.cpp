@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/replace-the-substring-for-balanced-string
 
+/*  
+  Logic - Note the use of map here. We computer each character count in prefix. Then delete one by one and try to find the count.
+  Code  - Sliding Window
+*/
+
 class Solution {
 public:
     int balancedString(string s) {

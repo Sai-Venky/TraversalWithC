@@ -1,6 +1,13 @@
 // https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid
 
 /*
+  Logic -
+    Using coloring and BFS backward check
+  Code -
+    DFS AND BFS
+*/
+
+/*
 NICE
 https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/discuss/547225/C%2B%2B-with-picture%3A-track-direction-%2B-upscaled-grid
 class Solution {

@@ -11,6 +11,12 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+ /*
+  Logic - SF
+  Code - Recursion
+  Time O(n)
+  Space O(height)
+ */
 class Solution {
 public:
     void replaceTree(TreeNode* root, int *sum){

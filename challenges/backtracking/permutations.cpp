@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/permutations
 
+/*  
+  Logic - Backtracking
+  Code  - SF
+*/
+
 class Solution {
 public:
     vector<vector<int>> outputs;

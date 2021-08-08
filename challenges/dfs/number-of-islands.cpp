@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/number-of-islands
 
+/*  
+  Logic - DFS
+  Code  - SF
+*/
+
 class Solution {
     int m, n;
 public:

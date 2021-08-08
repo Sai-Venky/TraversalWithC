@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/reorder-list
 
+/*
+  Logic - SF. Here stack is used
+  Code - Stack
+*/
 class Solution {
 public:
     void reorderList(ListNode* head) {

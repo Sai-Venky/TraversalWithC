@@ -1,5 +1,8 @@
 // https://leetcode.com/problems/k-closest-points-to-origin
-
+/*
+  Code  - SF
+  Logic - Heap
+*/
 class Solution {
 public:
     

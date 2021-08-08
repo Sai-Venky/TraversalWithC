@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/rotate-array
 
+// Sliding rotations
+
 class Solution {
 public:
     void rotate(vector<int>& nums, int k) {

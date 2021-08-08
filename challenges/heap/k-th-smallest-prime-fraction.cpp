@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/k-th-smallest-prime-fraction/
 
+/*
+  Code  - SF. Note the use of n-- to decrement n to ensure next bit of fractions are considered.
+  Logic - Heap
+*/
+
 class Solution {
 public:
     vector<int> kthSmallestPrimeFraction(vector<int>& arr, int k) {

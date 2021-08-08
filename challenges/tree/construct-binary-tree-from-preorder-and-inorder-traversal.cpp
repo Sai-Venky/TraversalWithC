@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 
+  /*
+  Logic - SF
+  Code - Recursion
+ */
 class Solution {
 public:
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {

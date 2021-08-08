@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/asteroid-collision
 
+/*
+  Logic - Note the flow of values
+  Code - Stack
+*/
+
 class Solution {
 public:
     vector<int> asteroidCollision(vector<int>& a) {

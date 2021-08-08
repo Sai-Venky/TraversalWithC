@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/find-k-pairs-with-smallest-sums
 
+/*
+  Code  - SF
+  Logic - Heap
+*/
 class Solution {
 public:
     struct Frequency {

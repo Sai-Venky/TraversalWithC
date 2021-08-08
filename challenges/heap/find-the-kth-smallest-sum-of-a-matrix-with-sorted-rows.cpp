@@ -1,5 +1,8 @@
 // https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows
-
+/*
+  Code  - Note use of map to store visited/ Can be set of vectors
+  Logic - Heap
+*/
 class Solution {
 public:
     int kthSmallest(vector<vector<int>>& mat, int k) {

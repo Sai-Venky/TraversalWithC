@@ -8,6 +8,11 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+ 
+/*
+  Logic - SF
+  Code - Stack
+*/
 class Solution {
 public:
     bool hasCycle(ListNode *head) {

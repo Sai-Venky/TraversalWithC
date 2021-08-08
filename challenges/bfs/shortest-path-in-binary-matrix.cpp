@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/shortest-path-in-binary-matrix/
 
+/*  
+  Logic - BFS
+  Code  - SF.
+*/
 class Solution {
 public:
     int shortestPathBinaryMatrix(vector<vector<int>>& grid) {

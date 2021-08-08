@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/online-stock-span
 
+/*
+  Logic - SF.
+  Code - Stack
+ */
 class StockSpanner {
 public:
     stack<pair<int, int>> s;

@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/palindrome-partitioning
 
+/*  
+  Logic - Backtracking
+  Code  - SF
+*/
+
 class Solution {
 public:
     vector<vector<string>> partition(string s) {

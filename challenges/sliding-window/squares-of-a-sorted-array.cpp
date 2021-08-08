@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/squares-of-a-sorted-array/
 
+/*  
+  Logic - SF. note here array is created in reverse
+  Code  - 2 Pointers
+*/
+
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& nums) {

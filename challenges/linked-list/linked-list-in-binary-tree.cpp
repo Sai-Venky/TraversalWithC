@@ -1,5 +1,15 @@
 // https://leetcode.com/problems/linked-list-in-binary-tree
 
+/*
+  Logic - SF. Note the use of checking at every position with recursive function
+  Code - Stack
+  Time complexity:
+It's O(N*max(L, H))
+where L = length of lined list
+and H = height of the tree
+The reason is for every node of BT, we have to check if the linked list can be found from that node. And in worst case either we exhaust the height or we exhaust the linked list. And Remember we have to do this for each node of BT (and worst case would be the linked list is not the part of the BT).
+*/
+
 class Solution {
 public:
     bool findSubPath(ListNode* head, TreeNode* root) {

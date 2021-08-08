@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/3sum-closest
 
+/*  
+  Logic - SF
+  Code  - Using two pointers for each triplets and finding nearest.
+*/
+
 class Solution {
 public:
     int threeSumClosest(vector<int>& nums, int target) {

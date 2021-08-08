@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/arranging-coins/
 
+/*
+  Logic - SF
+  Code - BS
+ */
+
 class Solution {
 public:
     int arrangeCoins(int n) {

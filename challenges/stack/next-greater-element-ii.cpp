@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/next-greater-element-ii
 
+/*  
+    Logic - SF. Note the use of n*2 by mod for similifying code
+    Code - Stack
+*/
+
 class Solution {
 public:
     vector<int> nextGreaterElements(vector<int>& A) {

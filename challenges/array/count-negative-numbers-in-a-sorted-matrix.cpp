@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/
 
+// good coding question 
+
 class Solution {
 public:
     int countNegatives(vector<vector<int>>& grid) {

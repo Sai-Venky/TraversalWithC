@@ -1,5 +1,11 @@
 // https://leetcode.com/problems/search-a-2d-matrix-ii
 
+/*  
+  Logic - Note the use of pointers for rows and columns
+  Code  - Two Pointers
+  O(m+n)
+*/
+
 class Solution {
 public:
   

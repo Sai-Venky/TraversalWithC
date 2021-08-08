@@ -10,6 +10,12 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+ 
+ /*
+  Logic - SF
+  Code - Stack
+ */
+
 class Solution {
 public:
     int carry, len1, len2;

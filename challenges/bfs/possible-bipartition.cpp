@@ -1,5 +1,12 @@
 // https://leetcode.com/problems/possible-bipartition/
 
+
+/*  
+  Logic - BFS. Note use of vector to convert to graph
+  Code  - Note the use of color to depict dislike in BFS.
+*/
+
+
 class Solution {
 public:
     bool possibleBipartition(int N, vector<vector<int>>& dislikes) {

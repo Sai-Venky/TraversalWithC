@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/binary-search
 
+/*
+  Logic - SF
+  Code - BS
+ */
 class Solution {
 public:
     int search(vector<int>& nums, int target) {

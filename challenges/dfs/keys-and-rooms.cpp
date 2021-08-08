@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/keys-and-rooms/
 
+/*
+  Logic - SF
+  Code - DFS
+*/
 class Solution {
 public:
 

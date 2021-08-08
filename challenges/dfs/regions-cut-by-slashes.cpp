@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/regions-cut-by-slashes/
 
+/*
+  Logic - SF
+  Code - DFS
+*/
+
 class Solution {
 public:
     void dfs(vector<vector<int>>& fp, int i, int j) {

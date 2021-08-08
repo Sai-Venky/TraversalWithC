@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold
 
+/*
+  Code - BS
+  Logic - SF. Note the use of checking and reducing the indices.
+*/
 class Solution {
 public:
   

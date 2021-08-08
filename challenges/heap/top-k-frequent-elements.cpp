@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/top-k-frequent-elements
 
+/*
+  Code  - SF
+  Logic - Heap
+*/
+
 class Solution {
 public:
     struct Frequency {

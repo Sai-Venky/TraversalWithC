@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/minimum-depth-of-binary-tree
 
+/*
+  Logic - SF
+  Code - BFS Approach
+ */
 class Solution {
 public:
     int minDepth(TreeNode* root) {

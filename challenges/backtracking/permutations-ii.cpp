@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/permutations-ii
 
+/*  
+  Logic - Backtracking
+  Code  - Checking the use of count to check total count is valid
+*/
+
 class Solution {
 public:
     vector<vector<int>> outputs;

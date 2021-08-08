@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/search-a-2d-matrix/
 
+/*
+  Code - BS
+  Logic - SF. Note the use of storing all indices in one place.
+*/
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {

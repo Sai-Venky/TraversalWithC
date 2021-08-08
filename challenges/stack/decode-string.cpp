@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/decode-string
 
+/*
+  Logic - SF
+  Code- Stack. Note the use of substr and use of out.size() to identify the components which have to be repeated.
+*/
+
 class Solution {
 public:
     string decodeString(string s) {

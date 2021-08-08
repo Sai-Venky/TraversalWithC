@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/surrounded-regions
 
+/*
+  Logic - DFS
+  Code - First Identify the boundary and then do final computation
+*/
+
 class Solution {
 public:
     void dfs(vector<vector<char>>& board, int i, int j) {

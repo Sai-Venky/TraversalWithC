@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/score-of-parentheses/
 
+/*
+  Logic - SF.
+  Code - Stack
+ */
 class Solution {
 public:
    int scoreOfParentheses(string S) {

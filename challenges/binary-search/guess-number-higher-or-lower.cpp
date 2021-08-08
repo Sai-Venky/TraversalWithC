@@ -9,6 +9,11 @@
  * int guess(int num);
  */
 
+/*
+  Code - BS
+  Logic - SF
+*/
+
 class Solution {
 public:
     int guessNumber(int n) {

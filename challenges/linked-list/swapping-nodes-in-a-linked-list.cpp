@@ -15,6 +15,10 @@
         return head;
     }
  */
+ /*
+  Logic - SF. Note the use of recursion here
+  Code - Stack
+*/
 class Solution {
 public:
     ListNode* tail;

@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/max-consecutive-ones-iii
 
+/*  
+  Logic - SF
+  Code  - Sliding Window
+*/
+
 class Solution {
 public:
     int longestOnes(vector<int>& nums, int k) {

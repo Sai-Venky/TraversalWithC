@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/h-index/
 
+/*
+  Logic - SF
+  Code - BS
+ */
 class Solution {
 public:
     int hIndex(vector<int>& citations) {

@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/time-needed-to-inform-all-employees/
 
+/*
+  Logic - DFS
+  Code - Check the use of map to create initial part
+*/
+
  class Solution {
  	void dfs(unordered_map<int, vector<int>>&hm, int i, vector<int>& informTime, int &res, int curr) {
 

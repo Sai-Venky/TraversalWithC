@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/find-eventual-safe-states
 
+/*
+  Logic - DFS
+  Code - SF
+*/
+
 enum Color {WHITE, GRAY, BLACK};
 class Solution {
 public:

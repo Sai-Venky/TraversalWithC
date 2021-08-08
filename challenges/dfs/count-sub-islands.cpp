@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/count-sub-islands
 
+/*
+  Logic - SF
+  Code - DFS
+*/
+
 class Solution {
 public:
     void dfs(int i, int j, vector<vector<int>> &B, vector<vector<int>>& A, bool *valid) {

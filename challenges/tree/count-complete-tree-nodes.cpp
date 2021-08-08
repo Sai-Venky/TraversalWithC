@@ -11,6 +11,11 @@
  * };
  */
 
+  /*
+  Logic - SF. Note the use of leaf ndoe check and power
+  Code - Recursion
+ */
+
 class Solution {
     int lastLevelCount = 0;
     int totalLevel = 0;

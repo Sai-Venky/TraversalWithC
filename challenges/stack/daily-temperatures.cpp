@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/daily-temperatures
 
+/*
+  Logic - Maintain a stack of all numbers. As and when a greater number found that the top of stack, Assign and pop it.
+  Code- Stack
+*/
+
 class Solution {
 public:
     vector<int> dailyTemperatures(vector<int>& temperatures) {

@@ -1,5 +1,11 @@
 // https://leetcode.com/problems/largest-rectangle-in-histogram
 
+/*  
+  Logic - SF
+  Code  - Note the use of stack and addition of 0 in end to triiger computation in largestRectangleArea function
+  Similar to maximal rectangle
+*/
+
 class Solution {
 public:
     int largestRectangleArea(vector<int>& heights) {

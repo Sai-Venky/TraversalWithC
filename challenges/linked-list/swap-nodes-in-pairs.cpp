@@ -10,6 +10,10 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+ /*
+  Logic - SF. Note use of recursion here
+  Code - Stack
+*/
 class Solution {
 public:
     ListNode* swap(ListNode* first, ListNode* second) {  

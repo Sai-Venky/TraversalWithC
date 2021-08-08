@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/two-sum
 
+/* 
+    Use Maps to store sum and find target based on that
+*/
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {

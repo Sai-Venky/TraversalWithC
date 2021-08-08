@@ -18,6 +18,11 @@
         };
 */
 
+/*  
+  Logic - SF. Note that here we are trying to increase the j to find a lesser min value
+  Code  - Sliding Window
+*/
+
 class Solution {
 public:
     int minSubArrayLen(int target, vector<int>& nums) {

@@ -1,47 +1,57 @@
 // https://leetcode.com/problems/3sum/
 
+/*  
+  Logic - SF
+  Code  - Using two pointers for each triplets. Ensuring duplicates are not counted.
+*/
+
 class Solution {
 public:
-    vector<vector<int>> threeSum(vector<int>& nums) {
+    vector<vector<int> > threeSum(vector<int> &num) {
     
-    set<vector<int>> result_set;  
-        
-    sort(nums.begin(), nums.end()); 
-    vector<int>::iterator it;
-    for(int i = 0; i < nums.size(); i++) {
-        int start = 0, end = nums.size() - 1;
-        if(i > 1 && i < nums.size() - 2 && nums[i] == nums[i+1]) continue;
-        int number_to_check = -1 * nums[i];
-        while(start<end) {
-            if(start == i) {
-                start ++;
-                continue;
-            } 
-            if(end == i) {
-                end --;
-                continue;
-            }
-            int sum_diff = nums[start] + nums[end];
-            if(sum_diff == number_to_check) {
-                vector<int> result_chunk;
-                result_chunk.push_back(nums[start]);
-                result_chunk.push_back(nums[end]);
-                result_chunk.push_back(nums[i]);
-                sort(result_chunk.begin(), result_chunk.end()); 
-                result_set.insert(result_chunk); 
-                end--;
-                start++;
-            } else if (sum_diff > number_to_check) {
-                end--;
-            } else {
-                start++;
-            }
-        }
-    }
+    vector<vector<int> > res;
 
+    std::sort(num.begin(), num.end());
+
+    for (int i = 0; i < num.size(); i++) {
         
-    
-    return vector<vector<int>>(result_set.begin(), result_set.end() );
-        
+        int target = -num[i];
+        int front = i + 1;
+        int back = num.size() - 1;
+
+        while (front < back) {
+
+            int sum = num[front] + num[back];
+            
+            // Finding answer which start from number num[i]
+            if (sum < target)
+                front++;
+
+            else if (sum > target)
+                back--;
+
+            else {
+                vector<int> triplet = {num[i], num[front], num[back]};
+                res.push_back(triplet);
+                
+                // Processing duplicates of Number 2
+                // Rolling the front pointer to the next different number forwards
+                while (front < back && num[front] == triplet[1]) front++;
+
+                // Processing duplicates of Number 3
+                // Rolling the back pointer to the next different number backwards
+                while (front < back && num[back] == triplet[2]) back--;
+            }
+            
+        }
+
+        // Processing duplicates of Number 1
+        while (i + 1 < num.size() && num[i + 1] == num[i]) 
+            i++;
+
     }
+    
+    return res;
+    
+}
 };

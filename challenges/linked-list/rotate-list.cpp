@@ -11,32 +11,32 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+ /*
+  Logic - SF
+  Code - Stack
+*/
 class Solution {
-public:
-    ListNode* rotateRight(ListNode* head, int k) {
-      if(head==NULL) return head;
-      ListNode* tail = head;
-      ListNode* prev;
-      ListNode* newtail = head;
-      ListNode* temp = head;
-      int ct=0;
-      while(tail) {
-        ct++;
-        prev=tail;
-        tail=tail->next;
-      }
-      cout<<ct;
-      if(k>=ct) {
-        k=k%ct;      
-      }
-      ct=ct-k;
-      cout<<ct;
-      while(--ct) {
-        newtail = newtail->next;
-      }
-      prev->next=head;
-      head = newtail->next;
-      newtail->next=NULL;
-      return head;
+    public:
+    ListNode rotateRight(ListNode head, int k) {
+        if(head == null) return null;
+        int listNum = 1;
+        ListNode tail = head;
+        
+        //find tail and count listNum
+        while(tail.next != null){
+            listNum++;
+            tail = tail.next;
+        }
+        tail.next = head;
+        int newHeadIndex = listNum - k % listNum;
+
+        for(int i = 0; i < newHeadIndex; i++){
+            tail = tail.next;
+        }
+        
+        head = tail.next;
+        tail.next = null;
+
+        return head;
     }
-};
+}

@@ -1,8 +1,11 @@
 // https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree
 
 
-/*
- https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/discuss/648898/figure-illustrationC%2B%2B-DFS%2B-Odd-frequency-count-and-4-line-solution 
+/* 
+  Logic - DFS
+  https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/discuss/648898/figure-illustrationC%2B%2B-DFS%2B-Odd-frequency-count-and-4-line-solution 
+  Code  - Note the use of n & n-1 as bitmask
+
 */
 
 /**

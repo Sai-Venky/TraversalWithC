@@ -10,6 +10,10 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+ /*
+  Logic - SF. Note use of prev here
+  Code - Stack
+*/
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {

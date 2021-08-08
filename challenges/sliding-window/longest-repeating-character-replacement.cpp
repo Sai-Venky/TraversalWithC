@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/longest-repeating-character-replacement
 
+/*  
+  Logic - SF
+  Code  - Sliding Window
+*/
+
 class Solution {
 public:
     int characterReplacement(string s, int k) {

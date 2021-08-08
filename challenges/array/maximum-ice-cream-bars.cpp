@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/maximum-ice-cream-bars
 
+// SF
+
 class Solution {
 public:
     int maxIceCream(vector<int>& costs, int coins) {

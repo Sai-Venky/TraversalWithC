@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses
 
+/*  
+    Logic - Note the marking of backward oass with stack itself and marking of strings with * and later removal 
+    Code - Stack
+*/
+
 class Solution {
 public:
     string minRemoveToMakeValid(string str) {

@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/sort-characters-by-frequency
 
+/*
+  Code  - SF
+  Logic - Heap
+*/
+
 class Solution {
 public:
 

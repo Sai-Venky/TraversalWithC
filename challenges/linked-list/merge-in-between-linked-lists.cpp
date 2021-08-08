@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/merge-in-between-linked-lists/
 
+/*
+  Logic - SF
+  Code - Stack
+*/
 class Solution {
 public:
     ListNode* mergeInBetween(ListNode* list1, int a, int b, ListNode* list2) {
