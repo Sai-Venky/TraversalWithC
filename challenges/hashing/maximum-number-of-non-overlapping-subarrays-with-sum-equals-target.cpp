@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/
 
-// NOTE Remember to make sum 0 cause we need non overlapping arrays
+// NOTE the use of sum 0 since we need non overlapping arrays
 
 class Solution {
 public:

@@ -13,7 +13,7 @@ public:
                 if (map.find(a.first+k) != map.end()) 
                     res++;
         }
-        
+        // In the case of unique
         else {
             for(auto a:map)
                 if (a.second > 1)

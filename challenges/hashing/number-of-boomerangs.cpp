@@ -6,6 +6,7 @@ public:
       
       unordered_map<int, int> m;
       int out=0;
+      // Note the use of for loop to calculate the distances between points and later computing the numbers.
       for(int i=0;i<points.size();i++) {
         for(int j=0;j<points.size();j++) {          
           int d=(points[i][0]-points[j][0])*(points[i][0]-points[j][0]) + (points[i][1]-points[j][1])*(points[i][1]-points[j][1]);
