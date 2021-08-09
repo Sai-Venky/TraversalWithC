@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/maximum-number-of-eaten-apples
 
+// Note the use of i + days[i] to store the expiration date of apples.
 class Solution {
 public:
     typedef pair<int, int> P; // {last date before expiration, number of apples}

@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/find-median-from-data-stream
 
+// NOte the use of heap here to store hte 2 halfs and maintaining that in median calculations.
 class MedianFinder {
 private:
     priority_queue<int> firstQ; // max_heap for the first half

@@ -38,7 +38,7 @@ public:
 */
 
 /*
-  Code  - SF. Note us of first 4 indices alone
+  Code  - SF. Note the use of first 4 indices alone
   Logic - Heap
 */
 

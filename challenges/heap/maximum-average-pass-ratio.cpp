@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/maximum-average-pass-ratio/
 
+// Note the increment in denominator also here.
+
 class Solution {
 public:
     double maxAverageRatio(vector<vector<int>>& classes, int extraStudents) {

@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/ipo
 
+// Note the use of picking the capitals and then finding the profits.
 class Solution {
 public:
     int findMaximizedCapital(int k, int w, vector<int>& profits, vector<int>& capital) {

@@ -10,6 +10,8 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+ // Note the use of first elements alone similar to kth-smallest-element-in-a-sorted-matrix
 class Solution {
 public:
 

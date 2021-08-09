@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/swim-in-rising-water/
 
+// Note the use of no special count variable here for time but instead using the navigation alone to fetch the values in 4 corners and based on that proceeding.
 class Solution {
 public:
     int swimInWater(vector<vector<int>>& grid) {
