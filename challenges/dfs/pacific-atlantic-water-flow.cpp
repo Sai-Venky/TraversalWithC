@@ -2,7 +2,7 @@
 
 
 /*
-    Logic - DFS. Finding the places where surroundings in 4 directions are lower than its current value
+    Logic - Note the use of DFS. Finding the places where surroundings in 4 directions are lower than its current value
     Code - SF
 */
 
