@@ -1,8 +1,7 @@
 // https://leetcode.com/problems/132-pattern
 
 /*
-  Logic - 
-    Maintain the monotonic decreasing stack and the largest and second largest values.
+  Logic - Note the use of stack. Maintain the monotonic decreasing stack and the largest and second largest values.
   Code - Stack
   RUNTIME: Each item is pushed and popped once at most, the time complexity is therefore O(n).
 */
