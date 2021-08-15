@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/arithmetic-subarrays
 
+// SF
 
 class Solution {
 public:

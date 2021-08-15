@@ -1,25 +1,50 @@
 // https://leetcode.com/problems/find-the-most-competitive-subsequence
 
 /*
-  Logic - Note the use of nums_to_delete. If nums_to_delete is 0, that means we cant delete any more elements else it would affect the size condition as there are no more elements left in array to fill.
-  To fill the first slot, we should pick the smallest number between index [0] ~ [N-k] (inclusive) (we have to preserve at least k-1 numbers for the rest of k-1 slots)
-    For the ith (0-indexed) slot, we should pick the smallest number between index [previous picked index + 1] ~ [N-k+i] (range of the window)
-    We keep a increasing monotonic queue for the window, and use the smallest number (front of the queue)
+  Logic - Note the use of stack. Good Question
+  https://leetcode.com/problems/find-the-most-competitive-subsequence/discuss/952786/JavaC%2B%2BPython-One-Pass-Stack-Solution
   Code- Stack
 */
 
 class Solution {
 public:
-    vector<int> mostCompetitive(vector<int>& nums, int k) {
+    vector<int> mostCompetitive(vector<int>& A, int k) {
         vector<int> stack;
-        int nums_to_delete = nums.size()-k;
-        for (int i = 0; i < nums.size(); i++) {
-            while (!stack.empty() && nums[i] < stack.back() && nums_to_delete) {
+
+        for (int i = 0; i < A.size(); ++i) {
+            while (!stack.empty() && stack.back() > A[i] && stack.size()+A.size()-i>k)
                 stack.pop_back();
-                nums_to_delete--;
-            }
-            stack.push_back(nums[i]);
+            if (stack.size() < k)
+                stack.push_back(A[i]);
         }
-        return vector<int>(stack.begin(), stack.begin()+k);
+        return stack;
+    }
+};
+
+class Solution {
+public:
+    vector<int> mostCompetitive(vector<int>& nums, int k) {
+      
+      priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;
+      
+      int i=0, prev=0;
+      
+      for(i=0;i<nums.size()-k+1;i++) {
+        q.push({nums[i], i});
+      }
+      vector<int> out;
+      while(k) {
+        pair<int, int> p = q.top();
+        q.pop();
+        if(p.second < prev) continue;
+        out.push_back(p.first);
+        prev = p.second;
+        if(i<nums.size()) {
+          q.push({nums[i], i}); i++;
+        }
+        k--;
+        
+      }
+      return out;
     }
 };
