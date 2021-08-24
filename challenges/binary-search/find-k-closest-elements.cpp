@@ -2,7 +2,7 @@
 
 /*
   Code - BS
-  Logic - https://leetcode.com/problems/find-k-closest-elements/discuss/106426/JavaC%2B%2BPython-Binary-Search-O(log(N-K)-%2B-K)
+  Logic - Note the logic here. https://leetcode.com/problems/find-k-closest-elements/discuss/106426/JavaC%2B%2BPython-Binary-Search-O(log(N-K)-%2B-K)
 */
 
 /*

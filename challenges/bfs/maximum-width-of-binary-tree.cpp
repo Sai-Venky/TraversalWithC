@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/maximum-width-of-binary-tree/
 
+// Note the use of 2*numbers to expand the width
 /**
  * Definition for a binary tree node.
  * struct TreeNode {

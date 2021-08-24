@@ -2,7 +2,7 @@
 
 /*
   Logic - DFS
-  Code - First Identify the boundary and then do final computation
+  Code - First do it in the boundary and then do final computation
 */
 
 class Solution {

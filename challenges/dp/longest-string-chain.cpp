@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/longest-string-chain
 
+// sorted by length
+
 class Solution {
 public:
     static bool compare(const string &s1, const string &s2) {

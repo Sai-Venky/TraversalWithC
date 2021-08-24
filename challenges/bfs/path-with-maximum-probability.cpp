@@ -3,6 +3,7 @@
 /*  
   Logic - BFS
   Code  - Note the use of visited here and they are considering at that point only those node values which are greater than it.
+  Also nothe the use of ps vector here which is used as a visited array.
 */
 
 class Solution {

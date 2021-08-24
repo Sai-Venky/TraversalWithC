@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/max-chunks-to-make-sorted/
 
-
+// note the use of sum here
 class Solution {
 public:
   int maxChunksToSorted(vector<int>& arr) {

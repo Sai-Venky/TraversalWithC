@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/find-k-th-smallest-pair-distance
 
+// Note the use of BS and Sliding window here.
 class Solution {
 public:
     int smallestDistancePair(vector<int>& a, int k) {

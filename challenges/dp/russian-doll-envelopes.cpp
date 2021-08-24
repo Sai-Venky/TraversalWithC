@@ -2,6 +2,7 @@
 
 
 /*
+  Reason for lower bound is we try to keep the second parameter as low as possible to ensure we can add extra ones.
 class Solution {
 public:
     static bool compare(vector<int>&a , vector<int>& b)
@@ -14,11 +15,8 @@ public:
       for(auto i:a)
       {
         auto it=lower_bound(dp.begin(),dp.end(),i[1]);
-        if(it==dp.end())
-          dp.push_back(i[1]);
-        else
-          *it=i[1];
-        cout<<dp.size()<<" ";
+        if(it==dp.end()) dp.push_back(i[1]);
+        else *it=i[1];
       }
       return dp.size();
     }

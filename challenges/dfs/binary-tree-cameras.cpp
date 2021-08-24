@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/binary-tree-cameras
 
+// Note the use of logic here to install the cameras.
+
 class Solution {
 public:
     int minCameraCover(TreeNode* root) {

@@ -57,6 +57,7 @@
     };
 */
 
+// Note the use of array here to store the distances and calculate.
 class Solution {
 public:
     int res=0;

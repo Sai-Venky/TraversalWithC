@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/minimum-area-rectangle/
 
+// Note the counting of another y here to ensure parallel conditions.
+
 class Solution {
 public:
     int minAreaRect(vector<vector<int>>& points) {

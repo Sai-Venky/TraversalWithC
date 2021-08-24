@@ -1,35 +1,34 @@
 // https://leetcode.com/problems/the-skyline-problem
 
+// note the use of negative height and pattenr of left alone in results here
 class Solution {
 public:
 
-    vector<vector<int>> getSkyline(vector<vector<int>>& buildings) {
-		multimap<int, int> coords;
-		for (auto building : buildings) {
-			coords.emplace(building[0], building[2]);
-			coords.emplace(building[1], -building[2]);
-		}
-
-		vector<vector<int>> results;
-		multiset<int> heights = { 0 };
-		map<int, int> corners;
-		for (auto p : coords) {
-			if (p.second > 0) {
-				heights.insert(p.second);
-			}
-			else {
-				heights.erase(heights.find(-p.second));
-			}
-			int cur_y = *heights.rbegin();
-			corners[p.first] = cur_y;
-		}
-
-        int current;
-        for(auto corner: corners) {
-            if(corner.second == current) continue;
-            results.push_back({corner.first ,corner.second});
-            current = corner.second;
+    vector<pair<int, int>> getSkyline(vector<vector<int>>& buildings) {
+        // use walls to record buildings; left wall is an insertion event, and right wall is a deletion event
+        vector<pair<int, int>> walls, ans;                  // first: x, second: height
+        for (auto b : buildings) {
+            // push in left / right walls
+            // let left wall has negative height to ensure left wall goes to multiset first if with same 'x' as right wall
+            walls.push_back(make_pair(b[0], -b[2]));
+            walls.push_back(make_pair(b[1], b[2]));
         }
-        return results;
-    }
+        sort(walls.begin(), walls.end());                   // sort walls
+        
+        multiset<int> leftWallHeights = {0};                // keep left wall heights sorted; dummy '0' for convenience
+        int top = 0;                                        // current max height among leftWallHeights
+        for (auto w : walls) {
+            if (w.second < 0) {                             // it's a left wall, insert the height
+                leftWallHeights.insert(-w.second);
+            } else {                                        // it's a right wall, delete the height
+                leftWallHeights.erase(leftWallHeights.find(w.second));
+            }
+            
+            if (*leftWallHeights.rbegin() != top) {         // mark a skyline point if top changes
+                ans.push_back(make_pair(w.first, top = *leftWallHeights.rbegin()));
+            }
+        }
+        
+        return ans;
+}
 };

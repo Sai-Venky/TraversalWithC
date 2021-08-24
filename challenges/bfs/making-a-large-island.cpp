@@ -2,7 +2,7 @@
 
 /*  
   Logic - BFS + DFS
-  Code  - marking with color and then finding nearby.
+  Code  - Note the use of marking with color and then finding nearby.
 */
 
 class Solution {

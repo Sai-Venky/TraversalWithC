@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/subarray-sums-divisible-by-k/
 
+// note the storing of reminders
 class Solution {
 public:
     int subarraysDivByK(vector<int>& nums, int k) {

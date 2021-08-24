@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
 
-// 2 traversals logical question
+// Note the 2 traversals logical question
 
 class Solution {
 public:

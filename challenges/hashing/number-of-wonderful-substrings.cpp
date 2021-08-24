@@ -2,6 +2,8 @@
 
 // https://leetcode.com/problems/number-of-wonderful-substrings/discuss/1301408/Bitmask-with-pictures-or-Python-or-O(N)
 
+// Note the masking being done
+
 class Solution {
 public:
     long long wonderfulSubstrings(string word) {

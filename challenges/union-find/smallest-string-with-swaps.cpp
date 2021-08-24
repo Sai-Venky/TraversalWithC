@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/smallest-string-with-swaps
 
+// Note the sorting done after union find here
+
 class Solution {
 public:
     int find(vector<int>& ds, int i) {

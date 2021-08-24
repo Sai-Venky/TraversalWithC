@@ -3,6 +3,8 @@
 /*
   Code  - SF. Note use of map to count frequency
   Logic - Heap
+  T-O(nlogn)
+  S-O(n)
 */
 
 class Solution {

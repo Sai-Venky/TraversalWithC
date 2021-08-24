@@ -2,6 +2,7 @@
 
 
 /*
+    https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/discuss/730567/JavaC%2B%2BPython-Straight-Forward    
     NOte the logic here
     We have 4 plans:
 

@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
 
+// Note the use of logic here.
 class Solution {
 public:
     int findMinArrowShots(vector<vector<int>>& points) {

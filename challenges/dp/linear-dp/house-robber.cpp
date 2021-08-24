@@ -15,6 +15,7 @@ public:
       dp[0] = nums[0];
       dp[1] = nums[1];
       dp[2] = nums[0] + nums[2];
+      // You wither rob the current house with 2 back, or rob prev with 3 back or skip 2 times and rob now.
       for(i=3;i<nums.size();i++) {
         dp[i] = max({nums[i] + dp[i-2], dp[i-1], dp[i-3] + nums[i]});
       }

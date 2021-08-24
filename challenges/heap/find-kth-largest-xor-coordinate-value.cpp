@@ -3,6 +3,8 @@
 /*
     Code - Heap
     Logic - Note the use of min heap here and popping everytime
+    Time Complexity : O(NMlogK)
+
 */
 class Solution {
 public:

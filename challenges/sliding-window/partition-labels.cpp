@@ -5,7 +5,7 @@
     1. Store a map with the maximum position of characters.
        /https://leetcode.com/problems/partition-labels/discuss/348059/C%2B%2B-O(n)-solution-with-explanation
     2. Then if its equal to maximum , return
-    Code - The use of max to keep track of last occured characters maximum and ignoring other variables is good.
+    Code - note The use of max to keep track of last occured characters maximum and ignoring other variables is good.
 */
 class Solution {
 public:

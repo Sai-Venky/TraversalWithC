@@ -3,7 +3,7 @@
 
 /*  
   Logic - BFS. Note use of vector to convert to graph
-  Code  - Note the use of color to depict dislike in BFS.
+  Code  - Note the use of color -1 * to depict dislike in BFS.
 */
 
 

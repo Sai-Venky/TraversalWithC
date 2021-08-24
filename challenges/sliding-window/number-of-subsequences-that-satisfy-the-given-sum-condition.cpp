@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/
 
-// note the use of sort here in subsequence as its similar to subset and wont affect
+// note the use of sort here in subsequence as its similar to subset and wont affect. 
+// Also note the powers. reason is we can pick or not pick in subsequence and it will still be less than k
 
 class Solution {
 public:

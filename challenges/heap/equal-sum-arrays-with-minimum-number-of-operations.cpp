@@ -1,8 +1,11 @@
 // https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations
 
 /*
-    Code  - SF. Note use of two queues. Identify that we need to take fastest watys to update array 
+    Code  - SF. Note use of two queues. Identify that we need to take fastest watys to update array .
+    NOte the part where we stop when diff not greater than as we can adjust that last value as 2,3,4,5,6 accordingly
     Logic - Heap
+    Time: O(n log n + m log m), where n and m are sizes of our arrays.
+    Memory: O(n + m) for the first solution, and O(1) - for the second (we re-use the original arrays as heaps).
     
     int minOperations(vector<int>& n1, vector<int>& n2) {
         if (n2.size() * 6 < n1.size() || n1.size() * 6 < n2.size())

@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
 
+// Note the use of back and front sums
+
 class Solution {
 public:
     int maxScore(vector<int>& cardPoints, int k) {

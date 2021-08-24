@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label
 
+// Note hte use of vector for calculating the alphabets array.
+
 class Solution {
 public:
     void dfs(vector<vector<int>> &neighbours, int i, string &labels, vector<int> &count,int alphabetParent[]) {

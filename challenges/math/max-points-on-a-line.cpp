@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/max-points-on-a-line
 
-// This is an O(n^2) solution given the nested for loops. All operations of unordered_map take O(1) time on average.
+// Note the calculation of gcd here. This is an O(n^2) solution given the nested for loops. All operations of unordered_map take O(1) time on average.
 
 
 class Solution {

@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/set-matrix-zeroes
 
+// Note the traversals and storing in start way
+
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {

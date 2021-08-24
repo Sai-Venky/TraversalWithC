@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/shortest-path-with-alternating-colors
 
+// Note the use of the second element.
+
 class Solution {
 public:
     vector<int> shortestAlternatingPaths(int n, vector<vector<int>>& re, vector<vector<int>>& be) {

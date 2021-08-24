@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/find-eventual-safe-states
 
 /*
-  Logic - DFS
+  Logic - DFS. Note the use of colors here to mark the nodes to ensure we track if its visited again.
   Code - SF
 */
 

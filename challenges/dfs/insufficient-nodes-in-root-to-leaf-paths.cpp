@@ -11,6 +11,9 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+ // Note the nodes deleteing for both only if both nodes are null
+
 class Solution {
 public:
     

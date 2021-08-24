@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/remove-duplicates-from-sorted-array
 
+// Note the use of track here which can be used to concurrently increment and store values 
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {

@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/jump-game
 
+// note the logic
+
 class Solution {
 public:
     bool canJump(vector<int>& nums) {

@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/map-of-highest-peak
 
+// SF BFS
+
 class Solution {
 public:
     vector<vector<int>> highestPeak(vector<vector<int>>& isWater) {

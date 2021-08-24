@@ -32,3 +32,31 @@ public:
         
     }
 };
+
+//  Two Sum Number Of Ways
+int numberOfWays(vector<int>& arr, int k) {
+  // Write your code here
+  
+  sort(arr.begin(), arr.end());
+  
+  int l=0, h=arr.size()-1, ct=0;
+  
+  while(l<h) {
+    int sum=arr[l]+arr[h];
+    
+    if(sum<k) {
+      l++;
+    } else if(sum>k) {
+      h--;
+    } else {
+      int ll=1,hh=1;
+      while(l<h && arr[l]==arr[l+1]) {ll++; l++;}
+      while(l<h && arr[h]==arr[h-1]) {hh++; h--;}
+      if(l==h) {ct+=((ll)*(ll-1)/2); break;}
+      else ct+=(ll*hh);
+      l++; h--;
+      }
+    }
+   
+   return ct;
+}

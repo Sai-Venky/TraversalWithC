@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/longest-repeating-character-replacement
 
 /*  
-  Logic - SF
+  Logic - SF. Note the use of freq here.
   Code  - Sliding Window
 */
 

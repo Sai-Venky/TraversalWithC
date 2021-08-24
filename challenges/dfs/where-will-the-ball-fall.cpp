@@ -28,6 +28,7 @@
 
     */
 
+// Note how the cases are handled here.
 class Solution {
 public: 
     

@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/satisfiability-of-equality-equations
 
+// Note the use of union find to associate the variables
+
 class Solution {
     vector<char>parent;
     char find(char x) {

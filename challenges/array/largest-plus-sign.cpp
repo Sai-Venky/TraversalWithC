@@ -4,7 +4,7 @@
     Traverse from left to right. Then from right to left.
     Then from top to bottom. Then from bottom to right.
     Find the minimum number of ones in all those directions.
-    Take minimum of them all.
+    Take minimum of them all. 
 */
 
 class Solution {

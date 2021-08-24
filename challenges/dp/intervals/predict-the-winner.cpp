@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/predict-the-winner
 
+/*
+  Intuition - If player 1 picks the number i from [i, j], then effective score player 1 gets is nums[i] - dp[i+1, j].
+  Note that cumulative scores can be negative also.
+*/
+
 class Solution {
 public:
     bool PredictTheWinner(vector<int>& nums) {
@@ -8,6 +13,7 @@ public:
 
       vector<vector<int>> dp(n,vector<int> (n,0));
       
+      // Player one has to take 2. hence +2 here
       for(int i=2;i<n;i++) {
         dp[i-2][i] = nums[i-2] - nums[i-1] + nums[i];
       }

@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/regions-cut-by-slashes/
 
 /*
-  Logic - SF
+  Logic - SF. Note the use of counting region by dfs after seperation
   Code - DFS
 */
 

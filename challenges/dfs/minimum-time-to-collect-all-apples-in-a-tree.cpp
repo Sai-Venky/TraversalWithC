@@ -8,7 +8,7 @@ public:
     void createGraph(vector<vector<int>>& edges) {
       for (auto e: edges) {
         g[e[0]].push_back(e[1]); // adjecency list representation
-		g[e[1]].push_back(e[0]); // adjecency list representation
+		    g[e[1]].push_back(e[0]); // adjecency list representation
       }
     }
   

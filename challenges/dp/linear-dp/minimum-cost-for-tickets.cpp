@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/minimum-cost-for-tickets
 
+// https://leetcode.com/problems/minimum-cost-for-tickets/discuss/226659/Two-DP-solutions-with-pictures
+
 class Solution {
 public:
     int mincostTickets(vector<int>& days, vector<int>& costs) {

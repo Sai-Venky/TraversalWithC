@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/substring-with-concatenation-of-all-words
 
+// Note the intuition of applying sliding window here.
+
 class Solution {
 public:
     vector<int> findSubstring(string s, vector<string>& words) {
@@ -27,9 +29,7 @@ public:
                         }
               if (sum == num) 
                 result.push_back(left);
-            }
-            else
-            {
+            } else {
               record.clear();
               sum = 0;
               left = j + len;

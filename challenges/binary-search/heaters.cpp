@@ -2,7 +2,7 @@
 
 /*
   Code - BS
-  Logic - For each house find left and right heater and keep track of maximum.
+  Logic - NOte the logic here. For each house find left and right heater and keep track of maximum.
   Another solution - https://leetcode.com/problems/heaters/discuss/95887/C%2B%2B-clean-solution-with-explanation
     int findRadius(vector<int>& A, vector<int>& H) {
       sort(A.begin(), A.end());

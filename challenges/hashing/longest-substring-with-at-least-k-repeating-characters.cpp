@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/
 
 /*
-    Note the use of count  and then recursion here to restrict and compute the outpus
+    Note the use of count  and then recursion here to restrict and compute the outputs
 */
 
 class Solution {

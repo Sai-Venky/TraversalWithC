@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/
 
 // dont use dfs here.wont work
+// Note the use of '+' to mark visited
 
 class Solution {
 public:

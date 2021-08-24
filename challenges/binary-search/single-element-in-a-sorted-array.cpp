@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/single-element-in-a-sorted-array
 
+// Note the use of mid and even or odd logic here.
+
 class Solution {
 public:
     int singleNonDuplicate(vector<int>& nums) {

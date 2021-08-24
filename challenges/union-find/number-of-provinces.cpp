@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/number-of-provinces/
 
+// Note the use of union find to acount the provinces
+
 class Solution {
 public:
  	  vector<int>rankmat;

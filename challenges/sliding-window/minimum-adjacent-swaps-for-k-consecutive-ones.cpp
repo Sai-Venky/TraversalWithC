@@ -1,6 +1,9 @@
 // https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones
 
 // https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/discuss/987607/O(n)-explanation-with-picture
+
+// Note the storage of ones here and then computation being done.
+
 #define ll long long
 
 class Solution {

@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/partition-equal-subset-sum/
 
 /*
+https://leetcode.com/problems/partition-equal-subset-sum/discuss/90592/01-knapsack-detailed-explanation
     class Solution {
     public:
         bool canPartition(vector<int>& nums) {

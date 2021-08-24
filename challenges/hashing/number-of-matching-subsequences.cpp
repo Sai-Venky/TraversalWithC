@@ -22,6 +22,7 @@
     }
 */
 
+// Note the upper bound being calculated after storing the meta information
 class Solution {
 public:
     int numMatchingSubseq(string s, vector<string>& words) {

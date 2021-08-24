@@ -3,7 +3,7 @@
 class Solution {
 public:
     bool canReorderDoubled(vector<int>& arr) {
-      // Note the use of unordered map and sort here. To ensure that elements are seen from start
+      // Note the use of unordered map and sort here. To ensure that elements are seen from start. Cant use direct map cause elements are negative.
       unordered_map<int, int> m;
       sort(arr.begin(),arr.end());
       for(int a:arr) {

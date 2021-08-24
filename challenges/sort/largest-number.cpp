@@ -1,24 +1,20 @@
 // https://leetcode.com/problems/largest-number
 
+// Note the use of the tsorting technique here
+// Given two numbers X and Y, decide which number to put first – we compare two numbers XY (Y appended at the end of X) and YX (X appended at the end of Y). If XY is larger, then X should come before Y in output, else Y should come before. For example, let X and Y be 542 and 60. To compare X and Y, we compare 54260 and 60542. Since 60542 is greater than 54260, we put Y first.
+
 class Solution {
 public:
-    string largestNumber(vector<int>& nums) {
-      string out = "";
-      for(int i=0; i<nums.size(); i++) {
-        for(int j=0; j<nums.size(); j++) {
-          string no1 = to_string(nums[i]);
-          string no2 = to_string(nums[j]);
-          if((no1+no2) > (no2+no1)) {
-            int temp = nums[i];
-            nums[i] = nums[j];
-            nums[j] = temp;
-          }
-        }
-      }
-      
-      for(auto num:nums) {
-        out+=to_string(num);
-      }
-      return out[0] == '0' ? "0":out;
+    string largestNumber(vector<int> &num) {
+        vector<string> arr;
+        for(auto i:num)
+            arr.push_back(to_string(i));
+        sort(begin(arr), end(arr), [](string &s1, string &s2){ return s1+s2>s2+s1; });
+        string res;
+        for(auto s:arr)
+            res+=s;
+        while(res[0]=='0' && res.length()>1)
+            res.erase(0,1);
+        return  res;
     }
 };

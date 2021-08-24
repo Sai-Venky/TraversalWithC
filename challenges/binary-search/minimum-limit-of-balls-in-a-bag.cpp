@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/
 
+// Note the use of BS here and ispossible function
+
 class Solution {
 public:
     bool isPossible(vector<int>& nums, int v, int maxOperations) {

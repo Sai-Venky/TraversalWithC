@@ -1,5 +1,11 @@
 // https://leetcode.com/problems/median-of-two-sorted-arrays
 
+// Note the us of BS here.
+/*
+  [1, 2, 3, 4, 5, 6]
+  [4, 7, 7, 7, 8]
+
+*/
 class Solution {
   
     int binarysearch(vector<int>& nums1, vector<int>& nums2, int pos, int s1, int e1, int s2, int e2) {

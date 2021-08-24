@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/minimum-score-triangulation-of-polygon
 
+// https://leetcode.com/problems/minimum-score-triangulation-of-polygon/discuss/286753/C%2B%2B-with-picture
+
 class Solution {
 public:
     int minScoreTriangulation(vector<int>& values) {

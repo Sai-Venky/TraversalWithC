@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/count-sub-islands
 
 /*
-  Logic - SF
+  Logic - SF. Note the continuation so all are marked.
   Code - DFS
 */
 

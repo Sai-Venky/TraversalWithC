@@ -4,6 +4,7 @@
     Important to note that all possible initial values are pushed first. 
     Based on that next state is calculated and so on. 
     Restriction also is done based on this
+    Also note the use if sum count to mark visited
 */
 
 /*

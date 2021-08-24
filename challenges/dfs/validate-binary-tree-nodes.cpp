@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/validate-binary-tree-nodes
 
+// Note the points to validate the tree.
+
 class Solution {
 public:
     bool validateBinaryTreeNodes(int n, vector<int>& leftChild, vector<int>& rightChild) {

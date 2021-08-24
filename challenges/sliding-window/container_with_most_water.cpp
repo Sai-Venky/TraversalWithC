@@ -14,7 +14,7 @@ print(max)
 Are you here also wondering whether the optimal solution might be missed? If yes, then why? If no, then what's the difference to the water problem? The box problem is simpler, but the process is the same as the water one. You consider a new option, you update your current "best", you remove something that can't give you something better anymore, and you move on. If you have seen the overall optimum already, then you have seen it already and remember it until the end. And if not, it's still in the game. So it will be found at some point. Really the only thing you need to show is that you don't make a mistake when you reduce the problem, which is what I did in my post.
  it does not matter whether you perform i++ or j--, because if h[i] == h[j], neither (i+1, j) or (i, j-1) can be potential solutions because the area obtained is necessarily smaller than (i, j).
 
-  Code - Using 2 pointers
+  Code - NOte the use of 2 pointers
 */
 
 class Solution {

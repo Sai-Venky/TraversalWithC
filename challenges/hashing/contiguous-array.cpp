@@ -19,6 +19,8 @@
     };
 */
 
+// Note the use of not updating prefix if found since length has to be maximised.
+
 class Solution {
 public:
     int findMaxLength(vector<int>& nums) {

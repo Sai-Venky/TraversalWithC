@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/
 
 /* 
-    Logic - Sliding Window
+    Logic - 2 pointers
     Code - SF
     O(n)
 */
