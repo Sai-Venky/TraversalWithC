@@ -2,7 +2,7 @@
 
 /*
 
-    For each position the wheel can move on step up or down.
+    Note that For each position the wheel can move on step up or down.
     So try doing that to all 4 positions in start 0000. Those all would become next state. 
     Check when its equal to target and return. Keep visited to ensure duplicates dont come.
 
