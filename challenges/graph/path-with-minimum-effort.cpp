@@ -1,7 +1,9 @@
 // https://leetcode.com/problems/path-with-minimum-effort
 
+// Note the shortest path algorithms https://leetcode.com/problems/path-with-minimum-effort/discuss/909002/JavaPython-3-3-codes%3A-Binary-Search-Bellman-Ford-and-Dijkstra-w-brief-explanation-and-analysis.
 /*
     DJIKSTRAS ALGORITHM
+    O(m * n log(m * n)), space: O(m * n)
     class Solution {
         public:
         int minimumEffortPath(vector<vector<int>> &heights) {
@@ -33,6 +35,7 @@
     };
 */
 
+//  O(m * n * log(Max)), space: O(m * n)
 class Solution {
 public:
     int m, n, mid;

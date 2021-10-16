@@ -19,6 +19,25 @@ When we select 9 for a subsequence of length 1, we can no longer pick any other 
 As another example, for subsequence of size 3, the possible subsequences are [2,5,6] [2,6,7] [2,7,9] [5,6,7] [1,6,7] [6,7,9]. Our algorithm ended up picking [2,5,6] by placing the 6 at that position.
 
 Corrections or suggestions are welcome.
+
+class Solution {
+    public int lengthOfLIS(int[] nums) {
+        if(nums == null || nums.length ==0){
+            return 0;
+        }
+        int[] dp = new int[nums.length];
+        int max = 0;
+        for(int i=0; i<nums.length; i++) {
+            for(int j=0; j<i; j++) {
+                if(nums[i]>nums[j]) {
+                    dp[i] = Math.max(dp[i], dp[j]+1);
+                    max = Math.max(max, dp[i]);
+                }
+            }
+        }
+        return  max+1;
+    }
+}
 */
 
 class Solution {
