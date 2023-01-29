@@ -26,6 +26,8 @@
   };
 */
 
+// Note the use of l and h below.
+
 class Solution {
 public:
     int findRadius(vector<int>& houses, vector<int>& heaters) {
