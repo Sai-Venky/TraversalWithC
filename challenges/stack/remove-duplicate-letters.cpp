@@ -1,7 +1,8 @@
 // https://leetcode.com/problems/remove-duplicate-letters/
 
 /*
-  Logic - SF. Note the use of logic of monotonic stack here. Ignoreing duplicates when smalled element exist later on.
+  GoodQuestion
+  Logic - Note the use of logic of monotonic stack here. Ignoreing duplicates when smalled element exist later on.
   Code - Stack
  */
 

@@ -3,6 +3,9 @@
 // https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/discuss/987607/O(n)-explanation-with-picture
 
 // Note the storage of ones here and then computation being done.
+// Note the presum part. the explanation for that is in the picture above.
+// The 3 innovations here are ones storage, prefix identification and the fact that keep a rolling sliding window
+// where the mid is always the best place to move all the ones to.
 
 #define ll long long
 
@@ -38,3 +41,52 @@ public:
         return ret;
     }
 };
+
+/*
+#define ll long long
+
+class Solution {
+public:
+    int minMoves(vector<int>& nums, int k) {
+        
+        vector<ll> ones;
+        vector<ll> prefix;
+        ll ret = 1e18;
+
+        for(int i=0;i<nums.size();i++) {
+            if(nums[i])
+            ones.push_back(i);
+        }
+
+        int sum=0;
+        prefix.push_back(0);
+
+        for(int i=0;i<ones.size();i++) {
+            sum+=ones[i];
+            prefix.push_back(sum);
+        }
+        int r=k-1, l=0;
+        while(r<ones.size()) {
+
+            int m = (l+r)/2;
+            int left = m-l;
+            int right = r-m;
+
+            int moves = prefix[r+1] - prefix[m+1] - (prefix[m] - prefix[l]);
+            int subtract = (left * (left+1) + right * (right+1))/2;
+
+            if(k % 2 == 0) {   
+                subtract += ones[m];  
+            }
+
+            if(moves - subtract < ret) {
+                ret = moves - subtract;
+            }
+            l++;
+            r++;
+        }
+
+        return ret;
+    }
+};
+*/

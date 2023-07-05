@@ -2,6 +2,9 @@
 
 /*
     Note the Optimization here.
+    [[1,4],[1,5],[3,6],[2,8]]
+    after sorting will be
+    [[1,5],[1,4],[2,8],[3,6]]
     class Solution {
         public:
             static bool compare(const vector<int> &v1, const vector<int> &v2) {

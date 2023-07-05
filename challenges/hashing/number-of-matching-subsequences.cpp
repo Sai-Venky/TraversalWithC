@@ -2,6 +2,7 @@
 
 
 /*
+    O(N+S) where N is length of string and S is sum of length of all words.
     int numMatchingSubseq(string S, vector<string>& words) {
         int cnt=0;
         unordered_map<char,vector<string>> m;
@@ -23,6 +24,7 @@
 */
 
 // Note the upper bound being calculated after storing the meta information
+// O(ablogc) where a is no of words, b is max length of each word and c is length of string s.
 class Solution {
 public:
     int numMatchingSubseq(string s, vector<string>& words) {

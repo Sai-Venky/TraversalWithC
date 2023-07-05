@@ -14,6 +14,26 @@
     }
 */
 
+/*
+class Solution {
+    public:
+    int numSubarraysWithSum(vector<int>& a, int t) {
+        int ans = 0;
+        deque<int> dq;
+
+        for(int i = 0, j = 0; i < a.size(); i++) {
+            if(a[i] == 1) dq.push_back(i);
+            if(dq.size() > t) j = dq.front() + 1, dq.pop_front();
+            if(dq.size() == t) {
+                if(dq.empty()) ans += (i-j+1);    //Edge case, simply evaluate the current window
+                else ans += (dq.front()-j+1);
+            }
+        }
+        return ans;
+    }
+};
+*/
+
 /*  
   Logic - Calculating the atmost logic here since this is case where solving for one subarray dose not generalize it for all subarrays
   Code  - Using Sliding Window

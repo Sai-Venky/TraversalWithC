@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/find-k-th-smallest-pair-distance
 
 // Note the use of BS and Sliding window here.
+// Magic is in the for loop: j is only initialized once for whatever i starts from, i.e. j is keeping increasing.
 class Solution {
 public:
     int smallestDistancePair(vector<int>& a, int k) {

@@ -6,43 +6,42 @@
   Logic - SF
   Code  - Note the use of stack and addition of 0 in end to triiger computation in largestRectangleArea function
 
-  int maximalRectangle(vector<vector<char> > &matrix) {
-    if(matrix.empty()){
-        return 0;
-    }
-    int maxRec = 0;
-    vector<int> height(matrix[0].size(), 0);
-    for(int i = 0; i < matrix.size(); i++){
-        for(int j = 0; j < matrix[0].size(); j++){
-            if(matrix[i][j] == '0'){
-                height[j] = 0;
+Same implementation as largest rectange in histogram.
+class Solution {
+public:
+    int maximalRectangle(vector<vector<char>>& matrix) {
+        int m=matrix.size(), n=matrix[0].size();
+        vector<int> heights(n, 0);
+        int maxi = 0;
+        for(int i=0;i<m;i++) {
+            for(int j=0;j<n;j++) {
+                if(matrix[i][j] == '1') {
+                    heights[j]++;
+                } else {
+                    heights[j]=0;
+                }
             }
-            else{
-                height[j]++;
-            }
-        }
-        maxRec = max(maxRec, largestRectangleArea(height));
-    }
-    return maxRec;
-  }
+            
+            vector<int> tracker;
+            int n=heights.size();
+            heights.push_back(0);
+            tracker.push_back(-1);
+            for(int j=0;j<n+1;j++) {
+                while(tracker.back()!=-1 && heights[tracker.back()] > heights[j]) {
+                        int temp = tracker.back();
+                        tracker.pop_back();
+                        maxi = max(maxi, heights[temp] * (j-tracker.back()-1));
+                }
 
-  int largestRectangleArea(vector<int> &height) {
-        stack<int> s;
-        height.push_back(0);
-        int maxSize = 0;
-        for(int i = 0; i < height.size(); i++){
-            if(s.empty() || height[i] >= height[s.top()]){
-                s.push(i);
+                tracker.push_back(j);
             }
-            else{
-                int temp = height[s.top()];
-                s.pop();
-                maxSize = max(maxSize, temp * (s.empty() ? i : i - 1 - s.top()));
-                i--;
-            }
+            heights.pop_back();
+
         }
-        return maxSize;
-  }
+
+        return maxi;
+    }
+};
 */
 
 /*  

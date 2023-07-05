@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted
 
 // Note the 2 sum pointer approach here where both l, r is incremented together
+// https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/830480/c-o-n-sliding-window-explanation-with-illustrations/
 class Solution {
 public:
 

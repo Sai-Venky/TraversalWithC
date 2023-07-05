@@ -1,6 +1,8 @@
 // https://leetcode.com/problems/minimum-cost-tree-from-leaf-values
 
 /*
+
+This is a good stack aplication problem
 class Solution {
 public:
     int mctFromLeafValues(vector<int>& A) {

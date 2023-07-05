@@ -25,3 +25,42 @@ public:
       return s.substr(start, end-start+1);
     }
 };
+
+// Longest Palindrome
+class Solution {
+public:
+    string longestPalindrome(string s) {
+        string count = ""; int n = s.length();
+        vector<vector<bool>> dp(n, vector<bool>(n, 0));
+        for (int d = 0; d < n; d++) {
+            for (int i = 0; i+d < n; i++) {
+                int j = i + d;
+                if (s[i] == s[j]) {
+                    dp[i][j] = (i+1 >= j-1) ? true : dp[i+1][j-1];
+                    if(dp[i][j]) count = s.substr(i, j-i+1);
+                }                
+            }
+        }
+        return count;
+    }
+};
+
+// Palindromic Substrings
+class Solution {
+public:
+    int countSubstrings(string s) {
+        int count = 0, n = s.length();
+        vector<vector<bool>> dp(n, vector<bool>(n, 0));
+        for (int d = 0; d < n; d++) {
+            for (int i = 0; i+d < n; i++) {
+                int j = i + d;
+                if (s[i] == s[j]) {
+                    dp[i][j] = (i+1 >= j-1) ? true : dp[i+1][j-1];
+					          if (dp[i][j]) count++;
+                }                
+            }
+        }
+        return count;
+    }
+};
+

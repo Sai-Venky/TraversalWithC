@@ -57,7 +57,6 @@ public:
       unordered_map<int, int> m;
       unordered_map<int, int> ct;
       int out=0, n=nums.size();
-      for(int num:nums) 
       
       vector<int> parent(n, -1);
       for(int i=0;i<n;i++) parent[i]=i;

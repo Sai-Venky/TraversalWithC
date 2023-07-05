@@ -56,3 +56,26 @@ public:
     }
 };
 
+class Solution {
+public:
+    int trap(vector<int>& heights) {
+        
+        vector<int> dq;
+        int total_area = 0;
+
+        for(int i=0; i<heights.size(); i++) {
+
+            while(!dq.empty() && heights[dq.back()] < heights[i]) {
+                int height = heights[dq.back()];
+                dq.pop_back();
+                int minHgt = !dq.empty() ? min(heights[dq.back()], heights[i]): 0;
+
+                total_area +=  minHgt > 0 ? (minHgt - height) * (i - dq.back() - 1): 0;
+            }
+
+            dq.push_back(i);
+        }
+
+        return total_area;
+    }
+};

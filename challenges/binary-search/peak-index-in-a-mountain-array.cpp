@@ -4,6 +4,8 @@
   Code - BS
   Logic - SF
 */
+// Same as peak element
+
 class Solution {
 public:
     int peakIndexInMountainArray(vector<int>& arr) {

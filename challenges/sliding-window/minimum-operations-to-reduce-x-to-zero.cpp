@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero
 
 // NOte the 2 pointer approach and logic of finding the maximum subarray forming sum and then subtracting that from size.
+// Very interesting sum
 
 class Solution {
 public:

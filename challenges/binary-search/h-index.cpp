@@ -3,6 +3,7 @@
 /*
   Logic - SF
   Code - BS
+  Both this and h-indexii are same. This has sort and that dosent.
  */
 class Solution {
 public:

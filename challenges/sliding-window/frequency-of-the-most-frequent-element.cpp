@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/frequency-of-the-most-frequent-element
 
+// Good Question on realising this is sliding window.
 
 class Solution {
 public:

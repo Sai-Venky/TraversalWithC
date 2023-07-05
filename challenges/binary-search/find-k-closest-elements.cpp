@@ -6,6 +6,8 @@
 */
 
 /*
+x - A[mid] > A[mid + k] - x = think in terms of midpoint of the two values x > (A[mid + k] + A[mid])/2
+our task in this binary search is to find the start of sliding window so that it's middle is the closest to x.
     class Solution {
         public List<Integer> findClosestElements(int[] arr, int k, int x) {
             int lo = 0;

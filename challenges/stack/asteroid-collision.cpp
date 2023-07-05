@@ -20,3 +20,43 @@ public:
         return s;
     }
 };
+
+/*
+
+My Implementation - 
+class Solution {
+public:
+    vector<int> asteroidCollision(vector<int>& asteroids) {
+        vector<int> output;
+        
+        for(int asteroid:asteroids) {
+            
+            if(output.empty() || asteroid > 0) {
+                output.push_back(asteroid);
+            } else if (asteroid < 0) {
+                bool broken = false;
+                while(!output.empty() && output.back() > 0 ) {
+                     if(output.back() < abs(asteroid)) {
+                        output.pop_back();
+                    } else {
+                        if(output.back() == abs(asteroid)) {
+                            output.pop_back();
+                        }
+                        broken = true;
+                        break;
+                    }
+                }
+                        
+                if(!broken) {
+                    output.push_back(asteroid);
+                }
+                
+            }
+
+        }
+
+        return output;
+    }
+};
+
+*/

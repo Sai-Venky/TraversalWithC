@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/maximum-product-subarray
+// https://leetcode.com/problems/maximum-product-subarray/solutions/1608862/java-3-solutions-detailed-explanation-using-image/
 
 class Solution {
 public:

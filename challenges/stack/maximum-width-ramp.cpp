@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/maximum-width-ramp
 
 /*
+    Good Question.
     Note the use of decreasing stack here.
     For each element from back, we find the maximum distance in stack and popit.
     REASON FOR POPPING (Intuition) is that next element will anyways have lesser distance only with that.
